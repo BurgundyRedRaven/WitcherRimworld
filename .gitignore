@@ -9,3 +9,10 @@
 Thumbs.db
 
 About/PublishedFileId.txt
+
+Assemblies/*.pdb
+Assemblies/*.xml
+
+*.dll
+
+packages/
