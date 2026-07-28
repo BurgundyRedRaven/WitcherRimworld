@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="BedBase">
+    <defName>Witcher_RestraintBed</defName>
+    <label>witcher restraint bed</label>
+    <description>A heavy, reinforced operating slab strapped with thick leather. It is built strictly to withstand the violent, bone-shattering convulsions of initiates as mutagens rewrite their biology.</description>
+    <thingClass>Building_Bed</thingClass>
+    <tickerType>Normal</tickerType>
+    <size>(1, 2)</size>
+    <graphicData>
+      <texPath>Things/Building/Furniture/Bed_Restrained/Bed_Restraint</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2, 2)</drawSize>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <statBases>
+      <WorkToBuild>1000</WorkToBuild>
+      <MedicalTendQualityOffset>0.10</MedicalTendQualityOffset>
+      <ImmunityGainSpeedFactor>1.10</ImmunityGainSpeedFactor>
+      <Mass>30</Mass>
+      <BedRestEffectiveness>1.0</BedRestEffectiveness>
+      <Comfort>0.75</Comfort>
+    </statBases>
+    <costList>
+      <WoodLog>50</WoodLog>
+      <Steel>60</Steel>
+      <Cloth>30</Cloth>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="WitcherTrials.CompProperties_RestraintBed">
+        <hediffToApply>Witcher_Restrained</hediffToApply>
+      </li>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>VitalsMonitor</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+    </placeWorkers>
+    <building>
+      <bed_defaultMedical>true</bed_defaultMedical>
+    </building>
+    <researchPrerequisites>
+      <li>Research_TrialOfTheGrasses</li>
+    </researchPrerequisites>
+  </ThingDef>
+</Defs>

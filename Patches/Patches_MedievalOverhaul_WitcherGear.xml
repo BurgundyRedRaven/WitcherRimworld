@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Medieval Overhaul</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[
+                        defName="Witcher_WolfSteelSword" or
+                        defName="Witcher_WolfSilverSword" or
+                        defName="Witcher_CatSteelDagger" or
+                        defName="Witcher_CatSilverDagger" or
+                        defName="Witcher_BearSteelMace" or
+                        defName="Witcher_BearSilverGreatsword" or
+                        defName="Witcher_WolfArmor" or
+                        defName="Witcher_WolfHelmet" or
+                        defName="Witcher_BearArmor" or
+                        defName="Witcher_BearHelmet" or
+                        defName="Witcher_WolfAmulet_Dormant" or
+                        defName="Witcher_CatAmulet_Dormant" or
+                        defName="Witcher_BearAmulet_Dormant"
+                        ]/recipeMaker/recipeUsers</xpath>
+                    <value>
+                        <li>DankPyon_Anvil</li>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

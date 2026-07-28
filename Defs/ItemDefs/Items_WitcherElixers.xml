@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Decoction of the Grasses -->
+  <ThingDef ParentName="ResourceBase">
+    <defName>Elixir_Grasses</defName>
+    <label>decoction of the grasses</label>
+    <description>A highly toxic, mutagenic concoction originally formulated by renegade mages. It systematically breaks down the nervous system to force structural mutations, a harrowing process that historically only three in ten initiates survive.</description>
+    <graphicData>
+      <texPath>Things/Item/Drug/Elixir_Grasses</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>25</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Mass>0.1</Mass>
+      <MarketValue>500</MarketValue>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+
+  <!-- Elixir of Dreams -->
+  <ThingDef ParentName="ResourceBase">
+    <defName>Elixir_Dreams</defName>
+    <label>mutagenic elixir of dreams</label>
+    <description>A potent alchemical mixture required to finalize the mutations of a Witcher initiate during the Trial of Dreams.</description>
+    <graphicData>
+      <texPath>Things/Item/Drug/Elixir_Dreams</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>25</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Mass>0.1</Mass>
+      <MarketValue>800</MarketValue>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Elixir_Apex</defName>
+    <label>apex mutagenic decoction</label>
+    <description>An extraordinarily volatile and highly concentrated concoction of monster mutagens and hemogen. It is used to trigger the final, most lethal stage of witcher mutations.</description>
+    <graphicData>
+      <texPath>Things/Item/Drug/Elixir_Apex</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>800</MarketValue>
+      <Mass>0.1</Mass>
+      <Flammability>0.7</Flammability>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+
+  <!-- Mutagen -->
+  <ThingDef ParentName="ResourceBase">
+    <defName>Witcher_Mutagen</defName>
+    <label>monster mutagen</label>
+    <description>Highly concentrated mutagenic compounds extracted from the corpses of formidable beasts.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Mutagen</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>150</MarketValue>
+      <Mass>0.05</Mass>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+</Defs>

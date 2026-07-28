@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Trial of the Grasses -->
+  <RecipeDef>
+    <defName>AdministerTrialOfTheGrasses</defName>
+    <label>administer Trial of the Grasses</label>
+    <description>Injects the subject with alchemical mutagens, initiating a dangerous 7-day biological transformation.</description>
+    <workerClass>WitcherTrials.Recipe_TrialOfTheGrasses</workerClass>
+    <jobString>Administering mutagens.</jobString>
+    <workAmount>3000</workAmount>
+    <surgerySuccessChanceFactor>0.9</surgerySuccessChanceFactor>
+    <deathOnFailedSurgeryChance>0.2</deathOnFailedSurgeryChance>
+    <targetsBodyPart>false</targetsBodyPart>
+    <anesthetize>true</anesthetize>
+    <addsHediff>Witcher_GrassesSickness</addsHediff>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Elixir_Grasses</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Elixir_Grasses</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <recipeUsers>
+      <li>Human</li>
+    </recipeUsers>
+    <researchPrerequisite>Research_TrialOfTheGrasses</researchPrerequisite>
+  </RecipeDef>
+
+  <!-- Trial of Dreams -->
+  <RecipeDef>
+    <defName>AdministerTrialOfDreams</defName>
+    <label>administer Trial of Dreams</label>
+    <description>Expose the initiate to the mutagenic substances required to complete their transformation.</description>
+    <workerClass>WitcherTrials.Recipe_TrialOfDreams</workerClass>
+    <jobString>Administering the Trial of Dreams.</jobString>
+    <workAmount>4000</workAmount>
+    <targetsBodyPart>false</targetsBodyPart>
+    <addsHediff>Witcher_TrialOfDreams</addsHediff>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Elixir_Dreams</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Elixir_Dreams</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <recipeUsers>
+      <li>Human</li>
+    </recipeUsers>
+    <researchPrerequisite>Research_TrialOfDreams</researchPrerequisite>
+  </RecipeDef>
+
+  <!-- Apex Mutation -->
+  <RecipeDef>
+    <defName>AdministerApexMutations</defName>
+    <label>administer apex mutations</label>
+    <description>Inject the witcher with the apex mutagenic decoction, triggering a final, excruciating transformation into a legendary witcher.</description>
+    <workerClass>WitcherTrials.Recipe_ApexMutations</workerClass>
+    <jobString>Administering apex decoction.</jobString>
+    <workAmount>4000</workAmount>
+    <surgerySuccessChanceFactor>0.8</surgerySuccessChanceFactor>
+    <deathOnFailedSurgeryChance>0.15</deathOnFailedSurgeryChance>
+    <targetsBodyPart>false</targetsBodyPart>
+    <anesthetize>true</anesthetize>
+    <addsHediff>Witcher_AdvancedMutationSickness</addsHediff>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Elixir_Apex</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Elixir_Apex</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <recipeUsers>
+      <li>Human</li>
+    </recipeUsers>
+    <researchPrerequisite>Research_AdvancedMutation</researchPrerequisite>
+  </RecipeDef>
+</Defs>

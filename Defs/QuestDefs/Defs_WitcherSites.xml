@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!-- Wolf School Site & GenStep -->
+    <SitePartDef>
+        <defName>SitePart_WolfTrial</defName>
+        <label>trial of the mountain (wolf)</label>
+        <description>A remote region claimed by a highly aggressive pack of apex predators.</description>
+        <workerClass>SitePartWorker</workerClass>
+        <siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
+        <expandingIconTexture>World/WorldObjects/Expanding/Sites/Outpost</expandingIconTexture>
+        <forceExitAndRemoveMapCountdownDurationDays>3</forceExitAndRemoveMapCountdownDurationDays>
+    </SitePartDef>
+
+    <GenStepDef>
+        <defName>GenStep_WolfTrial</defName>
+        <order>450</order>
+        <genStep Class="WitcherTrials.GenStep_WolfTrial" />
+        <linkWithSite>SitePart_WolfTrial</linkWithSite>
+    </GenStepDef>
+
+    <!-- Cat School Site & GenStep -->
+    <SitePartDef>
+        <defName>SitePart_CatTrial</defName>
+        <label>trial of the mountain (cat)</label>
+        <description>A heavily guarded camp harboring an agile rogue holding the catalyst.</description>
+        <workerClass>SitePartWorker</workerClass>
+        <siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
+        <expandingIconTexture>World/WorldObjects/Expanding/Sites/Outpost</expandingIconTexture>
+        <forceExitAndRemoveMapCountdownDurationDays>3</forceExitAndRemoveMapCountdownDurationDays>
+    </SitePartDef>
+
+    <GenStepDef>
+        <defName>GenStep_CatTarget</defName>
+        <order>451</order>
+        <genStep Class="WitcherTrials.GenStep_CatTarget" />
+        <linkWithSite>SitePart_CatTrial</linkWithSite>
+    </GenStepDef>
+
+    <!-- Bear School Site & GenStep -->
+    <SitePartDef>
+        <defName>SitePart_BearTrial</defName>
+        <label>trial of the mountain (bear)</label>
+        <description>A remote region plagued by extreme weather and an ancient beast.</description>
+        <workerClass>SitePartWorker</workerClass>
+        <siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
+        <expandingIconTexture>World/WorldObjects/Expanding/Sites/Outpost</expandingIconTexture>
+        <forceExitAndRemoveMapCountdownDurationDays>3</forceExitAndRemoveMapCountdownDurationDays>
+    </SitePartDef>
+
+    <GenStepDef>
+        <defName>GenStep_BearTrial</defName>
+        <order>450</order>
+        <genStep Class="WitcherTrials.GenStep_BearTrial" />
+        <linkWithSite>SitePart_BearTrial</linkWithSite>
+    </GenStepDef>
+</Defs>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <RecipeDef Name="WitcherPotionRecipeBase" Abstract="True">
+        <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+        <workAmount>600</workAmount>
+        <recipeUsers>
+            <li>DrugLab</li>
+        </recipeUsers>
+        <skillRequirements>
+            <Intellectual>6</Intellectual>
+            <Medicine>4</Medicine>
+        </skillRequirements>
+    </RecipeDef>
+
+    <RecipeDef ParentName="WitcherPotionRecipeBase">
+        <defName>Make_WitcherPotion_Swallow</defName>
+        <label>brew swallow potion</label>
+        <description>Brew the Swallow potion.</description>
+        <jobString>Brewing swallow potion.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>MedicineHerbal</li>
+                    </thingDefs>
+                </filter>
+                <count>2</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Witcher_Mutagen</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>MedicineHerbal</li>
+                <li>Witcher_Mutagen</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <WitcherPotion_Swallow>1</WitcherPotion_Swallow>
+        </products>
+        <researchPrerequisite>Research_BasicWitcherPotions</researchPrerequisite>
+    </RecipeDef>
+
+    <RecipeDef ParentName="WitcherPotionRecipeBase">
+        <defName>Make_WitcherPotion_Thunderbolt</defName>
+        <label>brew thunderbolt potion</label>
+        <description>Brew the Thunderbolt potion.</description>
+        <jobString>Brewing thunderbolt potion.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>PsychoidLeaves</li>
+                    </thingDefs>
+                </filter>
+                <count>4</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Witcher_Mutagen</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>PsychoidLeaves</li>
+                <li>Witcher_Mutagen</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <WitcherPotion_Thunderbolt>1</WitcherPotion_Thunderbolt>
+        </products>
+        <researchPrerequisite>Research_AdvancedWitcherPotions</researchPrerequisite>
+    </RecipeDef>
+
+    <RecipeDef ParentName="WitcherPotionRecipeBase">
+        <defName>Make_WitcherPotion_TawnyOwl</defName>
+        <label>brew tawny owl potion</label>
+        <description>Brew the Tawny Owl potion.</description>
+        <jobString>Brewing tawny owl potion.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>RawFungus</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Witcher_Mutagen</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>RawFungus</li>
+                <li>Witcher_Mutagen</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <WitcherPotion_TawnyOwl>1</WitcherPotion_TawnyOwl>
+        </products>
+        <researchPrerequisite>Research_BasicWitcherPotions</researchPrerequisite>
+    </RecipeDef>
+
+    <RecipeDef ParentName="WitcherPotionRecipeBase">
+        <defName>Make_WitcherPotion_PetrisPhilter</defName>
+        <label>brew petri's philter</label>
+        <description>Brew Petri's Philter.</description>
+        <jobString>Brewing petri's philter.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>PsychoidLeaves</li>
+                    </thingDefs>
+                </filter>
+                <count>4</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>HemogenPack</li>
+                    </thingDefs>
+                </filter>
+                <count>2</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Witcher_Mutagen</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>PsychoidLeaves</li>
+                <li>HemogenPack</li>
+                <li>Witcher_Mutagen</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <WitcherPotion_PetrisPhilter>1</WitcherPotion_PetrisPhilter>
+        </products>
+        <researchPrerequisite>Research_AdvancedWitcherPotions</researchPrerequisite>
+    </RecipeDef>
+
+    <RecipeDef ParentName="WitcherPotionRecipeBase">
+        <defName>Make_WitcherPotion_WhiteRaffard</defName>
+        <label>brew white raffard's decoction</label>
+        <description>Brew White Raffard's Decoction.</description>
+        <jobString>Brewing white raffard's decoction.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>MedicineHerbal</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>HemogenPack</li>
+                    </thingDefs>
+                </filter>
+                <count>2</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Witcher_Mutagen</li>
+                    </thingDefs>
+                </filter>
+                <count>2</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>MedicineHerbal</li>
+                <li>HemogenPack</li>
+                <li>Witcher_Mutagen</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <WitcherPotion_WhiteRaffard>1</WitcherPotion_WhiteRaffard>
+        </products>
+        <researchPrerequisite>Research_AdvancedWitcherPotions</researchPrerequisite>
+    </RecipeDef>
+
+    <RecipeDef ParentName="WitcherPotionRecipeBase">
+        <defName>Make_WitcherPotion_WhiteHoney</defName>
+        <label>brew white honey</label>
+        <description>Brew White Honey.</description>
+        <jobString>Brewing white honey.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>MedicineHerbal</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>InsectJelly</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>MedicineHerbal</li>
+                <li>InsectJelly</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <WitcherPotion_WhiteHoney>1</WitcherPotion_WhiteHoney>
+        </products>
+        <researchPrerequisite>Research_BasicWitcherPotions</researchPrerequisite>
+    </RecipeDef>
+</Defs>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!-- Basic Potions -->
+    <ResearchProjectDef>
+        <defName>Research_BasicWitcherPotions</defName>
+        <label>basic witcher potions</label>
+        <description>Learn to synthesize basic mutagenic compounds to brew Swallow, Tawny Owl, and White Honey.</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Medieval</techLevel>
+        <prerequisites>
+            <li>Research_TrialOfTheGrasses</li>
+        </prerequisites>
+        <tab>WitcherTrialsTab</tab>
+        <researchViewX>2</researchViewX>
+        <researchViewY>2</researchViewY>
+    </ResearchProjectDef>
+
+    <!-- Advanced Potions -->
+    <ResearchProjectDef>
+        <defName>Research_AdvancedWitcherPotions</defName>
+        <label>advanced witcher potions</label>
+        <description>Master complex alchemical processes to brew potent, highly toxic combat potions like Thunderbolt, Petri's Philter, and White Raffard's decoction.</description>
+        <baseCost>2000</baseCost>
+        <techLevel>Medieval</techLevel>
+        <prerequisites>
+            <li>Research_BasicWitcherPotions</li>
+        </prerequisites>
+        <tab>WitcherTrialsTab</tab>
+        <researchViewX>3</researchViewX>
+        <researchViewY>2</researchViewY>
+    </ResearchProjectDef>
+</Defs>

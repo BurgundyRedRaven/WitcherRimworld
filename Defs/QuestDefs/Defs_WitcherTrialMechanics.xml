@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!-- Hediff Cat & Bear kill trigger -->
+    <HediffDef>
+        <defName>Witcher_TrialTargetHediff</defName>
+        <label>trial target</label>
+        <description>This entity holds the catalyst for an amulet.</description>
+        <hediffClass>WitcherTrials.Hediff_TrialTarget</hediffClass>
+        <isBad>false</isBad>
+        <scenarioCanAdd>false</scenarioCanAdd>
+    </HediffDef>
+
+    <HediffDef>
+        <defName>Witcher_TrialBossBuff</defName>
+        <label>ancient vitality</label>
+        <description>Massive boost to health, armor, speed, and absolute pain immunity.</description>
+        <isBad>false</isBad>
+        <stages>
+            <li>
+                <painFactor>0.0</painFactor>
+                <statOffsets>
+                    <ArmorRating_Sharp>1.0</ArmorRating_Sharp>
+                    <ArmorRating_Blunt>1.0</ArmorRating_Blunt>
+                </statOffsets>
+                <statFactors>
+                    <MaxHitPoints>20.0</MaxHitPoints>
+                    <MeleeDPS>5.0</MeleeDPS>
+                </statFactors>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <!-- Extreme weather effects -->
+    <GameConditionDef>
+        <defName>Witcher_ExtremeCold</defName>
+        <conditionClass>WitcherTrials.GameCondition_InstantTemperature</conditionClass>
+        <label>magical blizzard</label>
+        <description>An unnatural, localized blizzard dropping temperatures to lethal levels.</description>
+        <temperatureOffset>-60</temperatureOffset>
+    </GameConditionDef>
+</Defs>

@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Witcher Initiate -->
+
+  <!-- Improved Reflexes -->
+  <GeneDef>
+    <defName>Witcher_EnhancedReflexes</defName>
+    <label>witcher reflexes</label>
+    <description>Greatly enhances melee dodge and hit chance, allowing the pawn to evade most incoming attacks.</description>
+    <iconPath>UI/Icons/Genes/Gene_Reflexes</iconPath>
+    <displayCategory>Miscellaneous</displayCategory>
+    <statOffsets>
+      <MeleeDodgeChance>20</MeleeDodgeChance>
+      <MeleeHitChance>10</MeleeHitChance>
+    </statOffsets>
+    <selectionWeight>0</selectionWeight>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-2</biostatMet>
+  </GeneDef>
+
+  <!-- Catlike Eyes -->
+  <GeneDef>
+    <defName>Witcher_CatEyes</defName>
+    <label>cat eyes</label>
+    <description>Vertical slit pupils that enhance visual acuity.</description>
+    <iconPath>UI/Icons/Genes/Gene_CatEyes</iconPath>
+    <displayCategory>Miscellaneous</displayCategory>
+    <capMods>
+      <li>
+        <capacity>Sight</capacity>
+        <offset>1</offset>
+      </li>
+    </capMods>
+    <statOffsets>
+      <PawnBeauty>-1</PawnBeauty>
+    </statOffsets>
+    <selectionWeight>0</selectionWeight>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>0</biostatMet>
+    <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPath>Things/Pawn/HeadAttachments/CatEyes/CatEyes</texPath>
+        <colorType>Custom</colorType>
+        <color>(255, 200, 0)</color>
+        <parentTagDef>Head</parentTagDef>
+        <drawData>
+          <defaultData>
+            <layer>54</layer>
+          </defaultData>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+
+  <!-- Superhuman Strength -->
+  <GeneDef>
+    <defName>Witcher_SuperhumanStrength</defName>
+    <label>superhuman strength</label>
+    <description>Musculature heavily altered for extreme physical power, carrying capacity, and subdermal resilience against physical blows.</description>
+    <iconPath>UI/Icons/Genes/Gene_Strength</iconPath>
+    <displayCategory>Miscellaneous</displayCategory>
+    <statOffsets>
+      <CarryingCapacity>150</CarryingCapacity>
+      <ArmorRating_Sharp>0.20</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+    </statOffsets>
+    <statFactors>
+      <MeleeDamageFactor>1.5</MeleeDamageFactor>
+      <IncomingDamageFactor>0.75</IncomingDamageFactor>
+    </statFactors>
+    <selectionWeight>0</selectionWeight>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-3</biostatMet>
+  </GeneDef>
+
+  <!-- Heightened Senses -->
+  <GeneDef>
+    <defName>Witcher_HeightenedSenses</defName>
+    <label>heightened senses</label>
+    <description>Acute hearing and smell, granting exceptional awareness and stealth.</description>
+    <iconPath>UI/Icons/Genes/Gene_Senses</iconPath>
+    <displayCategory>Miscellaneous</displayCategory>
+    <capMods>
+      <li>
+        <capacity>Hearing</capacity>
+        <offset>1</offset>
+      </li>
+    </capMods>
+    <statOffsets>
+      <HuntingStealth>1</HuntingStealth>
+    </statOffsets>
+    <selectionWeight>0</selectionWeight>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+  </GeneDef>
+
+  <!-- Slow Aging -->
+  <GeneDef>
+    <defName>Witcher_SlowAging</defName>
+    <label>slow aging</label>
+    <description>Cellular decay is severely slowed. The pawn ages normally until adulthood, after which aging slows significantly.</description>
+    <iconPath>UI/Icons/Genes/Gene_SlowAge</iconPath>
+    <displayCategory>Miscellaneous</displayCategory>
+    <biologicalAgeTickFactorFromAgeCurve>
+      <points>
+        <li>(13, 1)</li>
+        <li>(18, 0.2)</li>
+      </points>
+    </biologicalAgeTickFactorFromAgeCurve>
+    <selectionWeight>0</selectionWeight>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-1</biostatMet>
+  </GeneDef>
+
+  <!-- More Aggressive -->
+  <GeneDef>
+    <defName>Witcher_Aggression</defName>
+    <label>witcher aggression</label>
+    <description>Hormonal changes lead to increased aggression, higher pain tolerance, but more prone to violence.</description>
+    <iconPath>UI/Icons/Genes/Gene_Aggression</iconPath>
+    <displayCategory>Mood</displayCategory>
+    <statOffsets>
+      <PainShockThreshold>0.60</PainShockThreshold>
+      <MentalBreakThreshold>0.30</MentalBreakThreshold>
+    </statOffsets>
+    <aggroMentalBreakSelectionChanceFactor>2.5</aggroMentalBreakSelectionChanceFactor>
+    <selectionWeight>0</selectionWeight>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>3</biostatMet>
+  </GeneDef>
+
+  <!-- Full Witcher -->
+
+  <!-- Infertile -->
+  <GeneDef>
+    <defName>Witcher_Infertile</defName>
+    <label>infertile</label>
+    <description>The mutations have destroyed the reproductive system, rendering this pawn completely sterile.</description>
+    <iconPath>UI/Icons/Genes/Gene_Infertile</iconPath>
+    <displayCategory>Reproduction</displayCategory>
+    <sterilize>true</sterilize>
+    <statFactors>
+      <Fertility>0</Fertility>
+    </statFactors>
+    <selectionWeight>0</selectionWeight>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <biostatCpx>0</biostatCpx>
+    <biostatMet>4</biostatMet>
+  </GeneDef>
+
+  <!-- Night Vision -->
+  <GeneDef>
+    <defName>Witcher_NightVision</defName>
+    <label>night vision</label>
+    <description>The eyes adapt instantly to darkness, ignoring all darkness penalties to work speed and combat.</description>
+    <iconPath>UI/Icons/Genes/Gene_DarkVision</iconPath>
+    <displayCategory>Miscellaneous</displayCategory>
+    <ignoreDarkness>true</ignoreDarkness>
+    <selectionWeight>0</selectionWeight>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+  </GeneDef>
+
+  <!-- Stoic -->
+  <GeneDef>
+    <defName>Witcher_Stoic</defName>
+    <label>stoic</label>
+    <description>Emotions are heavily blunted by alchemical changes, drastically reducing the chance of mental breaks.</description>
+    <iconPath>UI/Icons/Genes/Gene_Stoic</iconPath>
+    <displayCategory>Mood</displayCategory>
+    <statOffsets>
+      <MentalBreakThreshold>-0.60</MentalBreakThreshold>
+    </statOffsets>
+    <selectionWeight>0</selectionWeight>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>2</biostatMet>
+  </GeneDef>
+
+  <!-- Mutated Immunity -->
+  <GeneDef>
+    <defName>Witcher_MutatedImmunity</defName>
+    <label>mutated immunity</label>
+    <description>Altered bone marrow and blood provide extreme resistance to toxins and rapid immunity gain against diseases.</description>
+    <iconPath>UI/Icons/Genes/Gene_Immunity</iconPath>
+    <displayCategory>Miscellaneous</displayCategory>
+    <statOffsets>
+      <ImmunityGainSpeed>0.50</ImmunityGainSpeed>
+      <ToxicResistance>0.50</ToxicResistance>
+      <MutagenTolerance>0.50</MutagenTolerance>
+    </statOffsets>
+    <selectionWeight>0</selectionWeight>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-2</biostatMet>
+  </GeneDef>
+
+  <!-- Rapid Regeneration -->
+  <GeneDef>
+    <defName>Witcher_RapidRegeneration</defName>
+    <label>rapid healing</label>
+    <description>Accelerated cellular reproduction allows wounds to close and heal significantly faster.</description>
+    <iconPath>UI/Icons/Genes/Gene_Healing</iconPath>
+    <displayCategory>Healing</displayCategory>
+    <statFactors>
+      <InjuryHealingFactor>3.5</InjuryHealingFactor>
+    </statFactors>
+    <selectionWeight>0</selectionWeight>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-2</biostatMet>
+  </GeneDef>
+
+  <!-- Witcher Metabolism -->
+  <GeneDef>
+    <defName>Witcher_Meditation</defName>
+    <label>meditative rest</label>
+    <description>The pawn requires significantly less sleep and processes nutrients with extreme efficiency.</description>
+    <iconPath>UI/Icons/Genes/Gene_Meditation</iconPath>
+    <displayCategory>Miscellaneous</displayCategory>
+    <statFactors>
+      <RestFallRateFactor>0.20</RestFallRateFactor>
+    </statFactors>
+    <selectionWeight>0</selectionWeight>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>5</biostatMet>
+  </GeneDef>
+
+  <!-- Climate Adaptability -->
+  <GeneDef>
+    <defName>Witcher_Adaptability</defName>
+    <label>climate adaptability</label>
+    <description>A heavily modified vascular system allows the body to maintain core temperature in extreme heat and cold.</description>
+    <iconPath>UI/Icons/Genes/Gene_Climate</iconPath>
+    <displayCategory>Temperature</displayCategory>
+    <statOffsets>
+      <ComfyTemperatureMin>-20</ComfyTemperatureMin>
+      <ComfyTemperatureMax>20</ComfyTemperatureMax>
+    </statOffsets>
+    <selectionWeight>0</selectionWeight>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+  </GeneDef>
+
+  <!-- Swiftness -->
+  <GeneDef>
+    <defName>Witcher_Swiftness</defName>
+    <label>witcher speed</label>
+    <description>Altered muscle fibers provide superior sprinting and strike speed on the battlefield.</description>
+    <iconPath>UI/Icons/Genes/Gene_Speed</iconPath>
+    <displayCategory>Movement</displayCategory>
+    <statOffsets>
+      <MoveSpeed>1.5</MoveSpeed>
+    </statOffsets>
+    <statFactors>
+      <MeleeCooldownFactor>0.70</MeleeCooldownFactor>
+    </statFactors>
+    <selectionWeight>0</selectionWeight>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-2</biostatMet>
+  </GeneDef>
+
+  <!-- Legendary Witcher -->
+
+  <!-- Mutagenic Albinism -->
+  <GeneDef>
+    <defName>Witcher_Albinism</defName>
+    <label>mutagenic albinism</label>
+    <description>Extreme mutagenic exposure has completely stripped pigmentation from the subject's hair and skin.</description>
+    <iconPath>UI/Icons/Genes/Gene_Albinism</iconPath>
+    <displayCategory>Cosmetic</displayCategory>
+    <hairColorOverride>(240, 240, 240)</hairColorOverride>
+    <skinColorOverride>(240, 240, 240)</skinColorOverride>
+    <selectionWeight>0</selectionWeight>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <biostatCpx>0</biostatCpx>
+    <biostatMet>0</biostatMet>
+  </GeneDef>
+
+  <!-- Toxic Ascendancy -->
+  <GeneDef>
+    <defName>Witcher_ToxicAscendancy</defName>
+    <label>toxic ascendancy</label>
+    <description>The liver and kidneys process extreme toxins with incredible efficiency, allowing the survival of lethal alchemical decoctions.</description>
+    <iconPath>UI/Icons/Genes/Gene_Toxicity</iconPath>
+    <displayCategory>Miscellaneous</displayCategory>
+    <statOffsets>
+      <ToxicResistance>0.50</ToxicResistance>
+      <MutagenTolerance>0.30</MutagenTolerance>
+      <ToxicEnvironmentResistance>1.0</ToxicEnvironmentResistance>
+    </statOffsets>
+    <selectionWeight>0</selectionWeight>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-1</biostatMet>
+  </GeneDef>
+
+  <!-- Mutagenic Metabolism -->
+  <GeneDef>
+    <defName>Witcher_MutagenicMetabolism</defName>
+    <label>mutagenic metabolism</label>
+    <description>The metabolic rate adapts rapidly to foreign substances, drastically reducing the severity of drug overdoses, resisting chemical addictions, and highly optimizing nutrient processing.</description>
+    <iconPath>UI/Icons/Genes/Gene_Metabolism</iconPath>
+    <displayCategory>Miscellaneous</displayCategory>
+    <statFactors>
+      <FoodPoisonChance>0</FoodPoisonChance>
+    </statFactors>
+    <customEffectDescriptions>
+      <li>Greatly reduces the severity and frequency of chemical overdoses.</li>
+      <li>Highly resistant to forming new chemical addictions.</li>
+    </customEffectDescriptions>
+    <selectionWeight>0</selectionWeight>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>8</biostatMet>
+  </GeneDef>
+
+  <!-- Intimidating Presence -->
+  <GeneDef>
+    <defName>Witcher_IntimidatingPresence</defName>
+    <label>intimidating presence</label>
+    <description>The unnatural, predatory aura of a fully mutated witcher instills deep primal fear in others, aiding in suppression and arrests but alienating baseline humans.</description>
+    <iconPath>UI/Icons/Genes/Gene_Intimidation</iconPath>
+    <displayCategory>Miscellaneous</displayCategory>
+    <statOffsets>
+      <ArrestSuccessChance>0.40</ArrestSuccessChance>
+      <SuppressionPower>0.50</SuppressionPower>
+      <PawnBeauty>-2</PawnBeauty>
+    </statOffsets>
+    <selectionWeight>0</selectionWeight>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>2</biostatMet>
+  </GeneDef>
+
+  <!-- Immortal Vitality -->
+  <GeneDef>
+    <defName>Witcher_ImmortalVitality</defName>
+    <label>immortal vitality</label>
+    <description>Archite mutagens have permanently halted biological aging and granted absolute immunity to age-related illnesses. The body is exceptionally tenacious, clinging to life even when subjected to otherwise instantly lethal trauma.</description>
+    <iconPath>UI/Icons/Genes/Gene_ImmortalVitality</iconPath>
+    <displayCategory>Miscellaneous</displayCategory>
+    <biologicalAgeTickFactorFromAgeCurve>
+      <points>
+        <li>(13, 1)</li>
+        <li>(25, 0)</li>
+      </points>
+    </biologicalAgeTickFactorFromAgeCurve>
+    <makeImmuneTo>
+      <li>Carcinoma</li>
+      <li>HeartAttack</li>
+      <li>BadBack</li>
+      <li>Cataract</li>
+      <li>Frail</li>
+      <li>Asthma</li>
+      <li>Alzheimers</li>
+      <li>Dementia</li>
+    </makeImmuneTo>
+    <customEffectDescriptions>
+      <li>Pawn will almost never die instantly from being downed by non-organ-destroying damage.</li>
+    </customEffectDescriptions>
+    <selectionWeight>0</selectionWeight>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <biostatCpx>4</biostatCpx>
+    <biostatMet>-4</biostatMet>
+  </GeneDef>
+
+  <!-- Lethal Predator -->
+  <GeneDef>
+    <defName>Witcher_LethalPredator</defName>
+    <label>lethal predator</label>
+    <description>A perfect synergy of tracking instincts and physiological lethality. The pawn achieves hyper-focus when hunting and applies anatomical knowledge to strike with devastating armor-penetrating precision.</description>
+    <iconPath>UI/Icons/Genes/Gene_LethalPredator</iconPath>
+    <displayCategory>Miscellaneous</displayCategory>
+    <statOffsets>
+      <HuntingStealth>0.80</HuntingStealth>
+      <MeleeArmorPenetration>0.50</MeleeArmorPenetration>
+    </statOffsets>
+    <statFactors>
+      <AimingDelayFactor>0.50</AimingDelayFactor>
+      <MeleeDamageFactor>1.50</MeleeDamageFactor>
+    </statFactors>
+    <selectionWeight>0</selectionWeight>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <biostatCpx>4</biostatCpx>
+    <biostatMet>-4</biostatMet>
+  </GeneDef>
+</Defs>

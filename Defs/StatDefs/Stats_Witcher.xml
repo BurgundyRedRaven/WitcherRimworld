@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <StatDef>
+        <defName>MutagenTolerance</defName>
+        <label>mutagen tolerance</label>
+        <description>Resistance to the highly specific, lethal mutagens found in Witcher potions.</description>
+        <category>PawnMisc</category>
+        <defaultBaseValue>0</defaultBaseValue>
+        <minValue>0</minValue>
+        <maxValue>1</maxValue>
+        <toStringStyle>PercentZero</toStringStyle>
+        <showIfUndefined>false</showIfUndefined>
+    </StatDef>
+
+    <HediffDef>
+        <defName>Witcher_Toxicity</defName>
+        <label>witcher toxicity</label>
+        <description>Toxicity caused by the lethal mutagens in Witcher potions. Deadly to baseline humans and non-mutants.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
+        <lethalSeverity>1.0</lethalSeverity>
+        <makesSickThought>true</makesSickThought>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <comps>
+            <li Class="HediffCompProperties_Immunizable">
+                <severityPerDayNotImmune>-0.5</severityPerDayNotImmune>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <label>minor</label>
+                <becomeVisible>false</becomeVisible>
+            </li>
+            <li>
+                <minSeverity>0.15</minSeverity>
+                <label>minor</label>
+                <painOffset>0.05</painOffset>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>-0.10</offset>
+                    </li>
+                </capMods>
+            </li>
+            <li>
+                <minSeverity>0.40</minSeverity>
+                <label>moderate</label>
+                <painOffset>0.15</painOffset>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>-0.20</offset>
+                    </li>
+                </capMods>
+            </li>
+            <li>
+                <minSeverity>0.60</minSeverity>
+                <label>serious</label>
+                <painOffset>0.30</painOffset>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>-0.40</offset>
+                    </li>
+                </capMods>
+            </li>
+            <li>
+                <minSeverity>0.80</minSeverity>
+                <label>extreme</label>
+                <painOffset>0.60</painOffset>
+                <lifeThreatening>true</lifeThreatening>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <setMax>0.10</setMax>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+    </HediffDef>
+</Defs>

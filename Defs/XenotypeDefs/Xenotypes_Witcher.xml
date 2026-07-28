@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Initiate (Trial of the Grasses Survivor) -->
+  <XenotypeDef>
+    <defName>Witcher_Initiate</defName>
+    <label>witcher initiate</label>
+    <description>A survivor of the grueling Trial of the Grasses. They possess enhanced physical traits and altered eyes, but lack the refined mutations of a full witcher and struggle with chemical-induced aggression.</description>
+    <inheritable>true</inheritable>
+    <iconPath>UI/Icons/Xenotypes/Witcher_Initiate</iconPath>
+    <genes>
+      <li>Witcher_EnhancedReflexes</li>
+      <li>Witcher_CatEyes</li>
+      <li>Witcher_SuperhumanStrength</li>
+      <li>Witcher_Swiftness</li>
+      <li>Witcher_Aggression</li>
+      <li>Witcher_RapidRegeneration</li>
+      <li>Witcher_MutatedImmunity</li>
+    </genes>
+  </XenotypeDef>
+
+  <!-- Full Witcher (All Trials Completed) -->
+  <XenotypeDef>
+    <defName>Witcher_Full</defName>
+    <label>witcher</label>
+    <description>A fully fledged witcher who has survived the Trial of the Grasses, and the Trial of Dreams. Their emotions are blunted, and their senses and biology are perfected for monster hunting.</description>
+    <inheritable>true</inheritable>
+    <iconPath>UI/Icons/Xenotypes/Witcher_Full</iconPath>
+    <genes>
+      <!-- Base Grasses Mutations -->
+      <li>Witcher_EnhancedReflexes</li>
+      <li>Witcher_CatEyes</li>
+      <li>Witcher_SuperhumanStrength</li>
+      <li>Witcher_Swiftness</li>
+      <li>Witcher_RapidRegeneration</li>
+      <li>Witcher_MutatedImmunity</li>
+      <li>Witcher_Aggression</li>
+      <!-- Advanced Trial Mutations -->
+      <li>Witcher_Infertile</li>
+      <li>Witcher_HeightenedSenses</li>
+      <li>Witcher_SlowAging</li>
+      <li>Witcher_NightVision</li>
+      <li>Witcher_Stoic</li>
+      <li>Witcher_Meditation</li>
+      <li>Witcher_Adaptability</li>
+    </genes>
+  </XenotypeDef>
+
+  <!-- Legendary Witcher (Trial of the Mountains Survivor) -->
+  <XenotypeDef>
+    <defName>Witcher_Legendary</defName>
+    <label>legendary witcher</label>
+    <description>A legendary witcher who has survived the final, extremely lethal trial. Their biology has been pushed beyond human limits, granting them immortal vitality, unmatched lethality, and a terrifying mutated appearance.</description>
+    <inheritable>true</inheritable>
+    <iconPath>UI/Icons/Xenotypes/Witcher_Legendary</iconPath>
+    <genes>
+      <!-- Base Grasses Mutations -->
+      <li>Witcher_EnhancedReflexes</li>
+      <li>Witcher_CatEyes</li>
+      <li>Witcher_SuperhumanStrength</li>
+      <li>Witcher_Swiftness</li>
+      <li>Witcher_RapidRegeneration</li>
+      <li>Witcher_MutatedImmunity</li>
+      <li>Witcher_Aggression</li>
+      <!-- Advanced Trial Mutations -->
+      <li>Witcher_Infertile</li>
+      <li>Witcher_HeightenedSenses</li>
+      <li>Witcher_NightVision</li>
+      <li>Witcher_Stoic</li>
+      <li>Witcher_Meditation</li>
+      <li>Witcher_Adaptability</li>
+      <!-- Legendary Mutations -->
+      <li>Witcher_Albinism</li>
+      <li>Witcher_ToxicAscendancy</li>
+      <li>Witcher_MutagenicMetabolism</li>
+      <li>Witcher_IntimidatingPresence</li>
+      <li>Witcher_ImmortalVitality</li>
+      <li>Witcher_LethalPredator</li>
+    </genes>
+  </XenotypeDef>
+</Defs>

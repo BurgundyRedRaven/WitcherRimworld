@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Nieuwe Research Tab -->
+  <ResearchTabDef>
+    <defName>WitcherTrialsTab</defName>
+    <label>Witcher</label>
+  </ResearchTabDef>
+
+  <!-- Trial of the Grasses -->
+  <ResearchProjectDef>
+    <defName>Research_TrialOfTheGrasses</defName>
+    <label>trial of the grasses</label>
+    <description>Decipher the ancient, guarded secrets of the witcher keeps. Learn to extract mutagenic properties from insect jelly and blood to forcefully break down and rebuild the human nervous system. Unlocks the restraint bed, decoction of the grasses, and the initial surgery.</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Medieval</techLevel>
+    <prerequisites>
+      <li>DrugProduction</li>
+      <li>MedicineProduction</li>
+    </prerequisites>
+    <tab>WitcherTrialsTab</tab>
+    <researchViewX>1</researchViewX>
+    <researchViewY>1</researchViewY>
+  </ResearchProjectDef>
+
+  <!-- Trial of Dreams -->
+  <ResearchProjectDef>
+    <defName>Research_TrialOfDreams</defName>
+    <label>trial of dreams</label>
+    <description>Unravel the deepest alchemical mysteries of the mages. Master complex processes utilizing mutagens and fungal components to permanently mutate the subject's eyes, bone marrow, and hormones, finalizing the witcher's physiology. Unlocks the elixir of dreams and the final surgery.</description>
+    <baseCost>2500</baseCost>
+    <techLevel>Medieval</techLevel>
+    <prerequisites>
+      <li>Research_TrialOfTheGrasses</li>
+    </prerequisites>
+    <tab>WitcherTrialsTab</tab>
+    <researchViewX>2</researchViewX>
+    <researchViewY>1</researchViewY>
+  </ResearchProjectDef>
+
+  <!-- Apex Mutation -->
+  <ResearchProjectDef>
+    <defName>Research_AdvancedMutation</defName>
+    <label>apex mutations</label>
+    <description>Master the highly unstable synthesis of the apex mutagenic decoction. This incredibly dangerous culmination of alchemical knowledge pushes a witcher's biology beyond all known limits, triggering the final transformation into a legendary witcher with immortal vitality and unmatched lethality.</description>
+    <baseCost>4500</baseCost>
+    <techLevel>Medieval</techLevel>
+    <prerequisites>
+      <li>Research_TrialOfDreams</li>
+    </prerequisites>
+    <tab>WitcherTrialsTab</tab>
+    <researchViewX>3</researchViewX>
+    <researchViewY>1</researchViewY>
+  </ResearchProjectDef>
+</Defs>

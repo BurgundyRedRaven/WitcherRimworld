@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingDef Name="WitcherAmuletBase" ParentName="ApparelBase" Abstract="True">
+        <techLevel>Medieval</techLevel>
+        <thingClass>Apparel</thingClass>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponMelee/Mace</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <Mass>0.2</Mass>
+            <WorkToMake>5000</WorkToMake>
+        </statBases>
+        <apparel>
+            <careIfWornByCorpse>false</careIfWornByCorpse>
+            <bodyPartGroups>
+                <li>Neck</li>
+            </bodyPartGroups>
+            <layers>
+                <li>WitcherAmuletLayer</li>
+            </layers>
+        </apparel>
+    </ThingDef>
+
+    <!-- Wolf Amulets -->
+    <ThingDef ParentName="WitcherAmuletBase">
+        <defName>Witcher_WolfAmulet_Dormant</defName>
+        <label>dormant wolf amulet</label>
+        <description>A silver wolf medallion. It requires the Trial of the Mountain to awaken its magical properties.</description>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <costStuffCount>20</costStuffCount>
+        <costList>
+            <Silver>30</Silver>
+        </costList>
+        <smeltable>true</smeltable>
+        <recipeMaker>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Smith</soundWorking>
+            <recipeUsers>
+                <li>FueledSmithy</li>
+                <li>ElectricSmithy</li>
+            </recipeUsers>
+            <skillRequirements>
+                <Crafting>5</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>Research_WolfSchoolGear</researchPrerequisite>
+        </recipeMaker>
+        <comps Inherit="False">
+            <li Class="CompProperties_Forbiddable" />
+            <li Class="WitcherTrials.CompProperties_TriggerTrialQuest">
+                <sitePartDef>SitePart_WolfTrial</sitePartDef>
+                <schoolName>Wolf School</schoolName>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="WitcherAmuletBase">
+        <defName>Witcher_WolfAmulet_Active</defName>
+        <label>active wolf amulet</label>
+        <smeltable>false</smeltable>
+        <description>A vibrating silver wolf medallion. It heightens the wearer's senses and resonates with psychic energy.</description>
+        <equippedStatOffsets>
+            <MeleeDodgeChance>10</MeleeDodgeChance>
+            <MeleeHitChance>2</MeleeHitChance>
+            <HuntingStealth>0.20</HuntingStealth>
+            <PsychicSensitivity>0.25</PsychicSensitivity>
+        </equippedStatOffsets>
+        <comps Inherit="False">
+            <li Class="CompProperties_Forbiddable" />
+            <li Class="WitcherTrials.CompProperties_WitcherSet">
+                <setTag>WolfSet</setTag>
+                <setHediff>WitcherSetBonus_Wolf</setHediff>
+                <requiredPieces>3</requiredPieces>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!-- Cat Amulets -->
+    <ThingDef ParentName="WitcherAmuletBase">
+        <defName>Witcher_CatAmulet_Dormant</defName>
+        <label>dormant cat amulet</label>
+        <description>A silver cat medallion. It requires the Trial of the Mountain to awaken its magical properties.</description>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <costStuffCount>20</costStuffCount>
+        <costList>
+            <Silver>30</Silver>
+        </costList>
+        <smeltable>true</smeltable>
+        <recipeMaker>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Smith</soundWorking>
+            <recipeUsers>
+                <li>FueledSmithy</li>
+                <li>ElectricSmithy</li>
+            </recipeUsers>
+            <skillRequirements>
+                <Crafting>5</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>Research_CatSchoolGear</researchPrerequisite>
+        </recipeMaker>
+        <comps Inherit="False">
+            <li Class="CompProperties_Forbiddable" />
+            <li Class="WitcherTrials.CompProperties_TriggerTrialQuest">
+                <sitePartDef>SitePart_CatTrial</sitePartDef>
+                <threatPoints>800</threatPoints>
+                <schoolName>Cat School</schoolName>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="WitcherAmuletBase">
+        <defName>Witcher_CatAmulet_Active</defName>
+        <label>active cat amulet</label>
+        <smeltable>false</smeltable>
+        <description>A vibrating silver cat medallion. It accelerates the wearer's reflexes and resonates with psychic energy.</description>
+        <equippedStatOffsets>
+            <MoveSpeed>0.4</MoveSpeed>
+            <MeleeHitChance>4</MeleeHitChance>
+            <MeleeDodgeChance>8</MeleeDodgeChance>
+            <PsychicSensitivity>0.25</PsychicSensitivity>
+        </equippedStatOffsets>
+        <comps Inherit="False">
+            <li Class="CompProperties_Forbiddable" />
+            <li Class="WitcherTrials.CompProperties_WitcherSet">
+                <setTag>CatSet</setTag>
+                <setHediff>WitcherSetBonus_Cat</setHediff>
+                <requiredPieces>3</requiredPieces>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!-- Bear Amulets -->
+    <ThingDef ParentName="WitcherAmuletBase">
+        <defName>Witcher_BearAmulet_Dormant</defName>
+        <label>dormant bear amulet</label>
+        <description>A silver bear medallion. It requires the Trial of the Mountain to awaken its magical properties.</description>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <costStuffCount>20</costStuffCount>
+        <costList>
+            <Silver>30</Silver>
+        </costList>
+        <smeltable>true</smeltable>
+        <recipeMaker>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Smith</soundWorking>
+            <recipeUsers>
+                <li>FueledSmithy</li>
+                <li>ElectricSmithy</li>
+            </recipeUsers>
+            <skillRequirements>
+                <Crafting>5</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>Research_BearSchoolGear</researchPrerequisite>
+        </recipeMaker>
+        <comps Inherit="False">
+            <li Class="CompProperties_Forbiddable" />
+            <li Class="WitcherTrials.CompProperties_TriggerTrialQuest">
+                <sitePartDef>SitePart_BearTrial</sitePartDef>
+                <schoolName>Bear School</schoolName>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="WitcherAmuletBase">
+        <defName>Witcher_BearAmulet_Active</defName>
+        <label>active bear amulet</label>
+        <smeltable>false</smeltable>
+        <description>A vibrating silver bear medallion. It hardens the wearer's resolve and resonates with psychic energy.</description>
+        <equippedStatOffsets>
+            <PainShockThreshold>0.15</PainShockThreshold>
+            <MentalBreakThreshold>-0.10</MentalBreakThreshold>
+            <ArmorRating_Sharp>0.10</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+            <PsychicSensitivity>0.25</PsychicSensitivity>
+        </equippedStatOffsets>
+        <comps Inherit="False">
+            <li Class="CompProperties_Forbiddable" />
+            <li Class="WitcherTrials.CompProperties_WitcherSet">
+                <setTag>BearSet</setTag>
+                <setHediff>WitcherSetBonus_Bear</setHediff>
+                <requiredPieces>3</requiredPieces>
+            </li>
+        </comps>
+    </ThingDef>
+</Defs>

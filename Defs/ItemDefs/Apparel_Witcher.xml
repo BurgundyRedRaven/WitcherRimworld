@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingDef Name="WitcherArmorBase" ParentName="ApparelMakeableBase" Abstract="True">
+        <techLevel>Medieval</techLevel>
+        <tickerType>Normal</tickerType>
+        <thingClass>Apparel</thingClass>
+    </ThingDef>
+
+    <!-- Wolf Armor -->
+    <ThingDef ParentName="WitcherArmorBase">
+        <defName>Witcher_WolfArmor</defName>
+        <label>wolf school armor</label>
+        <description>Medium armor offering a balanced blend of mobility and protection.</description>
+        <graphicData>
+            <texPath>Things/Pawn/Humanlike/Apparel/PlateArmor/PlateArmor</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/PlateArmor/PlateArmor</wornGraphicPath>
+            <layers>
+                <li>Middle</li>
+                <li>Shell</li>
+            </layers>
+        </apparel>
+        <statBases>
+            <Mass>7.0</Mass>
+            <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.50</ArmorRating_Blunt>
+            <WorkToMake>25000</WorkToMake>
+        </statBases>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <costStuffCount>120</costStuffCount>
+        <costList>
+            <Witcher_Mutagen>2</Witcher_Mutagen>
+        </costList>
+        <recipeMaker>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Smith</soundWorking>
+            <recipeUsers>
+                <li>FueledSmithy</li>
+                <li>ElectricSmithy</li>
+            </recipeUsers>
+            <skillRequirements>
+                <Crafting>7</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>Research_WolfSchoolGear</researchPrerequisite>
+        </recipeMaker>
+        <comps>
+            <li Class="WitcherTrials.CompProperties_WitcherSet">
+                <setTag>WolfSet</setTag>
+                <setHediff>WitcherSetBonus_Wolf</setHediff>
+                <requiredPieces>3</requiredPieces>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="WitcherArmorBase">
+        <defName>Witcher_WolfHelmet</defName>
+        <label>wolf school helmet</label>
+        <description>Matching headgear for the Wolf school.</description>
+        <graphicData>
+            <texPath>Things/Pawn/Humanlike/Apparel/SimpleHelmet/SimpleHelmet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <apparel>
+            <bodyPartGroups>
+                <li>FullHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/SimpleHelmet/SimpleHelmet</wornGraphicPath>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+        </apparel>
+        <statBases>
+            <Mass>1.5</Mass>
+            <ArmorRating_Sharp>0.85</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+            <WorkToMake>8000</WorkToMake>
+        </statBases>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <costStuffCount>50</costStuffCount>
+        <costList>
+            <Witcher_Mutagen>1</Witcher_Mutagen>
+        </costList>
+        <recipeMaker>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Smith</soundWorking>
+            <recipeUsers>
+                <li>FueledSmithy</li>
+                <li>ElectricSmithy</li>
+            </recipeUsers>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>Research_WolfSchoolGear</researchPrerequisite>
+        </recipeMaker>
+        <comps>
+            <li Class="WitcherTrials.CompProperties_WitcherSet">
+                <setTag>WolfSet</setTag>
+                <setHediff>WitcherSetBonus_Wolf</setHediff>
+                <requiredPieces>3</requiredPieces>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!-- Cat Armor -->
+    <ThingDef ParentName="WitcherArmorBase">
+        <defName>Witcher_CatArmor</defName>
+        <label>cat school armor</label>
+        <description>Light armor that maximizes agility and evasion over brute defense.</description>
+        <graphicData>
+            <texPath>Things/Pawn/Humanlike/Apparel/Duster/Duster</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Arms</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Duster/Duster</wornGraphicPath>
+            <layers>
+                <li>Middle</li>
+                <li>Shell</li>
+            </layers>
+        </apparel>
+        <statBases>
+            <Mass>4.0</Mass>
+            <ArmorRating_Sharp>0.60</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+            <WorkToMake>20000</WorkToMake>
+        </statBases>
+        <stuffCategories>
+            <li>Leathery</li>
+        </stuffCategories>
+        <costStuffCount>100</costStuffCount>
+        <costList>
+            <Witcher_Mutagen>2</Witcher_Mutagen>
+        </costList>
+        <recipeMaker>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Tailor</effectWorking>
+            <soundWorking>Recipe_Tailor</soundWorking>
+            <recipeUsers>
+                <li>HandTailoringBench</li>
+                <li>ElectricTailoringBench</li>
+            </recipeUsers>
+            <skillRequirements>
+                <Crafting>7</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>Research_CatSchoolGear</researchPrerequisite>
+        </recipeMaker>
+        <equippedStatOffsets>
+            <MoveSpeed>0.4</MoveSpeed>
+            <MeleeDodgeChance>5</MeleeDodgeChance>
+        </equippedStatOffsets>
+        <comps>
+            <li Class="WitcherTrials.CompProperties_WitcherSet">
+                <setTag>CatSet</setTag>
+                <setHediff>WitcherSetBonus_Cat</setHediff>
+                <requiredPieces>3</requiredPieces>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="WitcherArmorBase">
+        <defName>Witcher_CatHelmet</defName>
+        <label>cat school hood</label>
+        <description>Matching hood for the Cat school.</description>
+        <graphicData>
+            <texPath>Things/Pawn/Humanlike/Apparel/Tuque/Tuque</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <apparel>
+            <bodyPartGroups>
+                <li>UpperHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Tuque/Tuque</wornGraphicPath>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+        </apparel>
+        <statBases>
+            <Mass>0.5</Mass>
+            <ArmorRating_Sharp>0.50</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.20</ArmorRating_Blunt>
+            <WorkToMake>6000</WorkToMake>
+        </statBases>
+        <stuffCategories>
+            <li>Leathery</li>
+        </stuffCategories>
+        <costStuffCount>40</costStuffCount>
+        <costList>
+            <Witcher_Mutagen>1</Witcher_Mutagen>
+        </costList>
+        <recipeMaker>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Tailor</effectWorking>
+            <soundWorking>Recipe_Tailor</soundWorking>
+            <recipeUsers>
+                <li>HandTailoringBench</li>
+                <li>ElectricTailoringBench</li>
+            </recipeUsers>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>Research_CatSchoolGear</researchPrerequisite>
+        </recipeMaker>
+        <comps>
+            <li Class="WitcherTrials.CompProperties_WitcherSet">
+                <setTag>CatSet</setTag>
+                <setHediff>WitcherSetBonus_Cat</setHediff>
+                <requiredPieces>3</requiredPieces>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!-- Bear Armor -->
+    <ThingDef ParentName="WitcherArmorBase">
+        <defName>Witcher_BearArmor</defName>
+        <label>bear school armor</label>
+        <description>Heavy armor designed to absorb massive blows at the cost of mobility.</description>
+        <graphicData>
+            <texPath>Things/Pawn/Humanlike/Apparel/PlateArmor/PlateArmor</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/PlateArmor/PlateArmor</wornGraphicPath>
+            <layers>
+                <li>Middle</li>
+                <li>Shell</li>
+            </layers>
+        </apparel>
+        <statBases>
+            <Mass>12.0</Mass>
+            <ArmorRating_Sharp>1.15</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.70</ArmorRating_Blunt>
+            <WorkToMake>35000</WorkToMake>
+        </statBases>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <costStuffCount>160</costStuffCount>
+        <costList>
+            <Witcher_Mutagen>3</Witcher_Mutagen>
+        </costList>
+        <recipeMaker>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Smith</soundWorking>
+            <recipeUsers>
+                <li>FueledSmithy</li>
+                <li>ElectricSmithy</li>
+            </recipeUsers>
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>Research_BearSchoolGear</researchPrerequisite>
+        </recipeMaker>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.4</MoveSpeed>
+        </equippedStatOffsets>
+        <comps>
+            <li Class="WitcherTrials.CompProperties_WitcherSet">
+                <setTag>BearSet</setTag>
+                <setHediff>WitcherSetBonus_Bear</setHediff>
+                <requiredPieces>3</requiredPieces>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="WitcherArmorBase">
+        <defName>Witcher_BearHelmet</defName>
+        <label>bear school helmet</label>
+        <description>Matching heavy helmet for the Bear school.</description>
+        <graphicData>
+            <texPath>Things/Pawn/Humanlike/Apparel/SimpleHelmet/SimpleHelmet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <apparel>
+            <bodyPartGroups>
+                <li>FullHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/SimpleHelmet/SimpleHelmet</wornGraphicPath>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+        </apparel>
+        <statBases>
+            <Mass>2.5</Mass>
+            <ArmorRating_Sharp>1.05</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.60</ArmorRating_Blunt>
+            <WorkToMake>12000</WorkToMake>
+        </statBases>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <costStuffCount>60</costStuffCount>
+        <costList>
+            <Witcher_Mutagen>1</Witcher_Mutagen>
+        </costList>
+        <recipeMaker>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Smith</soundWorking>
+            <recipeUsers>
+                <li>FueledSmithy</li>
+                <li>ElectricSmithy</li>
+            </recipeUsers>
+            <skillRequirements>
+                <Crafting>7</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>Research_BearSchoolGear</researchPrerequisite>
+        </recipeMaker>
+        <comps>
+            <li Class="WitcherTrials.CompProperties_WitcherSet">
+                <setTag>BearSet</setTag>
+                <setHediff>WitcherSetBonus_Bear</setHediff>
+                <requiredPieces>3</requiredPieces>
+            </li>
+        </comps>
+    </ThingDef>
+</Defs>

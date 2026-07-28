@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <TraitDef>
+    <defName>ChildOfDestiny</defName>
+    <commonality>0.01</commonality>
+    <degreeDatas>
+      <li>
+        <label>child of destiny</label>
+        <description>Claimed through the ancient Law of Surprise or bound by elder prophecies, this pawn possesses innate combat talent, heightened spatial awareness, and a deep, latent connection to arcane forces.</description>
+        <statOffsets>
+          <PsychicSensitivity>0.50</PsychicSensitivity>
+          <MeleeDodgeChance>5</MeleeDodgeChance>
+          <MeleeHitChance>2</MeleeHitChance>
+        </statOffsets>
+        <statFactors>
+          <GlobalLearningFactor>1.20</GlobalLearningFactor>
+        </statFactors>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+</Defs>

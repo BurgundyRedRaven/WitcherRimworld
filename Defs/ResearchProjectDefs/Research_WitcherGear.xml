@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!-- Wolf School -->
+    <ResearchProjectDef>
+        <defName>Research_WolfSchoolGear</defName>
+        <label>wolf school gear</label>
+        <description>Learn to craft the balanced steel and silver swords, as well as the medium armor of the Wolf School.</description>
+        <baseCost>1500</baseCost>
+        <techLevel>Medieval</techLevel>
+        <prerequisites>
+            <li>Research_TrialOfTheGrasses</li>
+        </prerequisites>
+        <tab>WitcherTrialsTab</tab>
+        <researchViewX>2</researchViewX>
+        <researchViewY>3</researchViewY>
+    </ResearchProjectDef>
+
+    <!-- Cat School -->
+    <ResearchProjectDef>
+        <defName>Research_CatSchoolGear</defName>
+        <label>cat school gear</label>
+        <description>Learn to craft the fast daggers and highly agile light armor of the Cat School.</description>
+        <baseCost>1500</baseCost>
+        <techLevel>Medieval</techLevel>
+        <prerequisites>
+            <li>Research_TrialOfTheGrasses</li>
+        </prerequisites>
+        <tab>WitcherTrialsTab</tab>
+        <researchViewX>2</researchViewX>
+        <researchViewY>4</researchViewY>
+    </ResearchProjectDef>
+
+    <!-- Bear School -->
+    <ResearchProjectDef>
+        <defName>Research_BearSchoolGear</defName>
+        <label>bear school gear</label>
+        <description>Learn to craft the devastating heavy weapons and highly protective heavy armor of the Bear School.</description>
+        <baseCost>1500</baseCost>
+        <techLevel>Medieval</techLevel>
+        <prerequisites>
+            <li>Research_TrialOfTheGrasses</li>
+        </prerequisites>
+        <tab>WitcherTrialsTab</tab>
+        <researchViewX>2</researchViewX>
+        <researchViewY>5</researchViewY>
+    </ResearchProjectDef>
+</Defs>

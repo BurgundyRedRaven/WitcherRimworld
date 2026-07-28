@@ -1,0 +1,11 @@
+[Bb]in/
+[Oo]bj/
+
+.vs/
+.idea/
+*.user
+
+.DS_Store
+Thumbs.db
+
+About/PublishedFileId.txt

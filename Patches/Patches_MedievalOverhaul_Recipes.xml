@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Medieval Overhaul</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/RecipeDef[
+                defName="Make_Elixir_Grasses" or
+                defName="Make_Elixir_Dreams" or
+                defName="Make_Elixir_Apex" or
+                defName="Make_WitcherPotion_Swallow" or
+                defName="Make_WitcherPotion_Thunderbolt" or
+                defName="Make_WitcherPotion_TawnyOwl" or
+                defName="Make_WitcherPotion_PetrisPhilter" or
+                defName="Make_WitcherPotion_WhiteRaffard" or
+                defName="Make_WitcherPotion_WhiteHoney"
+                ]/recipeUsers</xpath>
+            <value>
+                <li>DankPyon_AlchemyBench</li>
+            </value>
+        </match>
+    </Operation>
+</Patch>

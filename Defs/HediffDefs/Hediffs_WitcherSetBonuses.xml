@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <HediffDef>
+        <defName>WitcherSetBonus_Wolf</defName>
+        <label>wolf set bonus</label>
+        <description>Synergy from wearing the complete Wolf School set.</description>
+        <isBad>false</isBad>
+        <stages>
+            <li>
+                <statOffsets>
+                    <MeleeHitChance>2</MeleeHitChance>
+                    <MeleeDodgeChance>2</MeleeDodgeChance>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef>
+        <defName>WitcherSetBonus_Cat</defName>
+        <label>cat set bonus</label>
+        <description>Synergy from wearing the complete Cat School set.</description>
+        <isBad>false</isBad>
+        <stages>
+            <li>
+                <statOffsets>
+                    <MoveSpeed>0.6</MoveSpeed>
+                    <MeleeHitChance>2</MeleeHitChance>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef>
+        <defName>WitcherSetBonus_Bear</defName>
+        <label>bear set bonus</label>
+        <description>Synergy from wearing the complete Bear School set.</description>
+        <isBad>false</isBad>
+        <stages>
+            <li>
+                <statOffsets>
+                    <ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+                    <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+                    <PainShockThreshold>0.20</PainShockThreshold>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+</Defs>

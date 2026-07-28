@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Craft Decoction of the Grasses -->
+  <RecipeDef>
+    <defName>Make_Elixir_Grasses</defName>
+    <label>brew decoction of the grasses</label>
+    <description>Brew the highly toxic mutagens required for the Trial of the Grasses. The precise ratios of biological toxins and hemogen must be maintained to avoid the instant death of the subject.</description>
+    <jobString>Brewing decoction.</jobString>
+    <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+    <workAmount>1500</workAmount>
+    <recipeUsers>
+      <li>DrugLab</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MedicineHerbal</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Witcher_Mutagen</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>HemogenPack</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>MedicineHerbal</li>
+        <li>Witcher_Mutagen</li>
+        <li>HemogenPack</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Elixir_Grasses>1</Elixir_Grasses>
+    </products>
+    <skillRequirements>
+      <Intellectual>8</Intellectual>
+      <Medicine>6</Medicine>
+    </skillRequirements>
+    <researchPrerequisite>Research_TrialOfTheGrasses</researchPrerequisite>
+  </RecipeDef>
+
+  <!-- Craft Elixir of Dreams -->
+  <RecipeDef>
+    <defName>Make_Elixir_Dreams</defName>
+    <label>brew mutagenic elixir of dreams</label>
+    <description>Brew the complex alchemical mixture needed for the Trial of Dreams. This concoction stabilizes the chaotic mutations of the Grasses, requiring rare organic components and intense focus.</description>
+    <jobString>Brewing elixir.</jobString>
+    <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+    <workAmount>2000</workAmount>
+    <recipeUsers>
+      <li>DrugLab</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MedicineHerbal</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RawFungus</li>
+          </thingDefs>
+        </filter>
+        <count>30</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>HemogenPack</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Witcher_Mutagen</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>MedicineHerbal</li>
+        <li>RawFungus</li>
+        <li>HemogenPack</li>
+        <li>Witcher_Mutagen</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Elixir_Dreams>1</Elixir_Dreams>
+    </products>
+    <skillRequirements>
+      <Intellectual>12</Intellectual>
+      <Medicine>8</Medicine>
+    </skillRequirements>
+    <researchPrerequisite>Research_TrialOfDreams</researchPrerequisite>
+  </RecipeDef>
+
+  <!-- Craft Apex Mutagenic Decoction -->
+  <RecipeDef>
+    <defName>Make_Elixir_Apex</defName>
+    <label>brew apex mutagenic decoction</label>
+    <description>Brew the highly concentrated and extremely dangerous apex decoction. Requires an immense amount of monster mutagens and biological stabilizers.</description>
+    <jobString>Brewing apex decoction.</jobString>
+    <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+    <workAmount>3000</workAmount>
+    <recipeUsers>
+      <li>DrugLab</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MedicineHerbal</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>HemogenPack</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Witcher_Mutagen</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>MedicineHerbal</li>
+        <li>HemogenPack</li>
+        <li>Witcher_Mutagen</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Elixir_Apex>1</Elixir_Apex>
+    </products>
+    <skillRequirements>
+      <Intellectual>15</Intellectual>
+      <Medicine>10</Medicine>
+    </skillRequirements>
+    <researchPrerequisite>Research_AdvancedMutation</researchPrerequisite>
+  </RecipeDef>
+</Defs>
