@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
+    <!-- Potions -->
     <StatDef>
         <defName>MutagenTolerance</defName>
         <label>mutagen tolerance</label>
@@ -78,4 +79,15 @@
             </li>
         </stages>
     </HediffDef>
+
+    <!-- Focus -->
+    <StatDef>
+        <defName>Witcher_FocusRegen</defName>
+        <label>focus regeneration</label>
+        <description>The amount of Focus this pawn regenerates per 150 ticks.</description>
+        <category>PawnMisc</category>
+        <defaultBaseValue>0.02</defaultBaseValue>
+        <toStringStyle>FloatTwo</toStringStyle>
+        <showIfUndefined>false</showIfUndefined>
+    </StatDef>
 </Defs>

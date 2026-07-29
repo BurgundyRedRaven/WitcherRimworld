@@ -67,6 +67,7 @@
             <MeleeDodgeChance>10</MeleeDodgeChance>
             <MeleeHitChance>2</MeleeHitChance>
             <HuntingStealth>0.20</HuntingStealth>
+            <Witcher_FocusRegen>0.01</Witcher_FocusRegen>
             <PsychicSensitivity>0.25</PsychicSensitivity>
         </equippedStatOffsets>
         <comps Inherit="False">
@@ -125,6 +126,7 @@
             <MoveSpeed>0.4</MoveSpeed>
             <MeleeHitChance>4</MeleeHitChance>
             <MeleeDodgeChance>8</MeleeDodgeChance>
+            <Witcher_FocusRegen>0.01</Witcher_FocusRegen>
             <PsychicSensitivity>0.25</PsychicSensitivity>
         </equippedStatOffsets>
         <comps Inherit="False">
@@ -184,6 +186,7 @@
             <ArmorRating_Sharp>0.10</ArmorRating_Sharp>
             <ArmorRating_Blunt>0.10</ArmorRating_Blunt>
             <PsychicSensitivity>0.25</PsychicSensitivity>
+            <Witcher_FocusRegen>0.01</Witcher_FocusRegen>
         </equippedStatOffsets>
         <comps Inherit="False">
             <li Class="CompProperties_Forbiddable" />

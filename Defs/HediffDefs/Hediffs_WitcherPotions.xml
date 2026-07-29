@@ -84,6 +84,7 @@
                 <statFactors>
                     <PsychicSensitivity>1.50</PsychicSensitivity>
                     <PsychicEntropyRecoveryRate>1.50</PsychicEntropyRecoveryRate>
+                    <Witcher_FocusRegen>2.0</Witcher_FocusRegen>
                 </statFactors>
             </li>
         </stages>

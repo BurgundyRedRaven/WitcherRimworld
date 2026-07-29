@@ -137,6 +137,33 @@
     <biostatMet>3</biostatMet>
   </GeneDef>
 
+  <GeneDef>
+    <defName>Witcher_FocusResource</defName>
+    <label>focus pool</label>
+    <description>Grants a reserve of Focus, a magical energy used to cast Witcher signs.</description>
+    <geneClass>WitcherTrials.Gene_Focus</geneClass>
+    <resourceGizmoType>WitcherTrials.GeneGizmo_Focus</resourceGizmoType>
+    <resourceLabel>focus</resourceLabel>
+    <resourceDescription>The mental and physical energy required to channel Witcher signs. Regenerates over time, enhanced by innate destiny or alchemical stimulants.</resourceDescription>
+    <iconPath>UI/Icons/Genes/Gene_Focus</iconPath>
+    <displayCategory>Miscellaneous</displayCategory>
+    <selectionWeight>0</selectionWeight>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>0</biostatMet>
+    <customEffectDescriptions>
+      <li>Gives a maximum Focus pool of 1.0.</li>
+      <li>Focus regenerates over time.</li>
+    </customEffectDescriptions>
+    <!-- Abilities -->
+    <abilities>
+      <li>WitcherSign_Aard</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>WitcherSign_Aard</AbilityDef>
+    </descriptionHyperlinks>
+  </GeneDef>
+
   <!-- Full Witcher -->
 
   <!-- Infertile -->

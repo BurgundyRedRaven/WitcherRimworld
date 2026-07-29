@@ -15,6 +15,7 @@
       <li>Witcher_Aggression</li>
       <li>Witcher_RapidRegeneration</li>
       <li>Witcher_MutatedImmunity</li>
+      <li>Witcher_FocusResource</li>
     </genes>
   </XenotypeDef>
 
@@ -34,6 +35,7 @@
       <li>Witcher_RapidRegeneration</li>
       <li>Witcher_MutatedImmunity</li>
       <li>Witcher_Aggression</li>
+      <li>Witcher_FocusResource</li>
       <!-- Advanced Trial Mutations -->
       <li>Witcher_Infertile</li>
       <li>Witcher_HeightenedSenses</li>
@@ -61,6 +63,7 @@
       <li>Witcher_RapidRegeneration</li>
       <li>Witcher_MutatedImmunity</li>
       <li>Witcher_Aggression</li>
+      <li>Witcher_FocusResource</li>
       <!-- Advanced Trial Mutations -->
       <li>Witcher_Infertile</li>
       <li>Witcher_HeightenedSenses</li>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <AbilityDef>
+        <defName>WitcherSign_Aard</defName>
+        <label>Aard</label>
+        <description>A telekinetic thrust that staggers enemies and deals blunt force. Consumes Focus.</description>
+        <iconPath>UI/Abilities/Aard</iconPath>
+        <cooldownTicksRange>120</cooldownTicksRange>
+        <targetRequired>true</targetRequired>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <range>15.9</range>
+            <warmupTime>0.5</warmupTime>
+            <targetParams>
+                <canTargetPawns>true</canTargetPawns>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="WitcherTrials.CompProperties_AbilityFocusCost">
+                <focusCost>0.33</focusCost>
+            </li>
+            <li Class="WitcherTrials.CompProperties_AbilityAard">
+                <stunDurationSeconds>3</stunDurationSeconds>
+                <damageAmount>15</damageAmount>
+            </li>
+        </comps>
+    </AbilityDef>
+</Defs>

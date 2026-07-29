@@ -16,6 +16,8 @@ namespace WitcherTrials
         public static GeneDef ImmortalVitality => DefDatabase<GeneDef>.GetNamedSilentFail("Witcher_ImmortalVitality");
         public static StatDef MutagenTolerance => DefDatabase<StatDef>.GetNamedSilentFail("MutagenTolerance");
         public static HediffDef WitcherToxicity => DefDatabase<HediffDef>.GetNamedSilentFail("Witcher_Toxicity");
+        public static HediffDef PetrisPhilterEffect => DefDatabase<HediffDef>.GetNamedSilentFail("WitcherPotion_PetrisPhilterEffect");
+        public static StatDef FocusRegen => DefDatabase<StatDef>.GetNamedSilentFail("Witcher_FocusRegen");
     }
 
     public static class WitcherTrialsUtility
