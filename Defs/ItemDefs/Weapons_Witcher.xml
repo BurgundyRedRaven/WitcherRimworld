@@ -7,8 +7,9 @@
         <description>A masterfully crafted steel sword, optimized for fighting humans and armored targets.</description>
         <techLevel>Medieval</techLevel>
         <graphicData>
-            <texPath>Things/Item/Equipment/WeaponMelee/LongSword</texPath>
+            <texPath>Things/Item/Weapons/SteelSword</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.3</drawSize>
         </graphicData>
         <statBases>
             <Mass>2.0</Mass>
@@ -75,8 +76,9 @@
         <description>A silver-plated sword, highly lethal against monsters, mutants, and animals.</description>
         <techLevel>Medieval</techLevel>
         <graphicData>
-            <texPath>Things/Item/Equipment/WeaponMelee/LongSword</texPath>
+            <texPath>Things/Item/Weapons/SilverSword</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.3</drawSize>
         </graphicData>
         <statBases>
             <Mass>1.8</Mass>
@@ -145,8 +147,9 @@
         <description>A fast, sharp blade for exploiting gaps in human armor.</description>
         <techLevel>Medieval</techLevel>
         <graphicData>
-            <texPath>Things/Item/Equipment/WeaponMelee/Knife</texPath>
+            <texPath>Things/Item/Weapons/SteelDagger</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.5</drawSize>
         </graphicData>
         <statBases>
             <Mass>1.0</Mass>
@@ -204,8 +207,9 @@
         <description>A fast, silver-coated blade designed for quick strikes against beasts.</description>
         <techLevel>Medieval</techLevel>
         <graphicData>
-            <texPath>Things/Item/Equipment/WeaponMelee/Knife</texPath>
+            <texPath>Things/Item/Weapons/SilverDagger</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.5</drawSize>
         </graphicData>
         <statBases>
             <Mass>1.0</Mass>
@@ -265,7 +269,7 @@
         <description>A heavy mace for crushing human skulls and armor alike.</description>
         <techLevel>Medieval</techLevel>
         <graphicData>
-            <texPath>Things/Item/Equipment/WeaponMelee/Mace</texPath>
+            <texPath>Things/Item/Weapons/SteelMace</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <statBases>
@@ -316,7 +320,7 @@
         <description>A massive silver sword used for severing monster limbs in a single blow.</description>
         <techLevel>Medieval</techLevel>
         <graphicData>
-            <texPath>Things/Item/Equipment/WeaponMelee/LongSword</texPath>
+            <texPath>Things/Item/Weapons/SilverGreatsword</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <drawSize>1.3</drawSize>
         </graphicData>

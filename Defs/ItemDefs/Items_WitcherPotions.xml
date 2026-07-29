@@ -27,8 +27,7 @@
         <label>swallow potion</label>
         <description>A highly toxic alchemical mixture that drastically accelerates the body's natural healing process.</description>
         <graphicData>
-            <texPath>Things/Item/Drug/Penoxycyline/Penoxycyline_a</texPath>
-            <color>(200, 50, 50)</color>
+            <texPath>Things/Item/Drug/Swallow</texPath>
         </graphicData>
         <ingestible>
             <outcomeDoers>
@@ -37,7 +36,7 @@
                     <severity>1.0</severity>
                 </li>
                 <li Class="WitcherTrials.IngestionOutcomeDoer_ToxicPotion">
-                    <severity>0.50</severity>
+                    <severity>0.75</severity>
                 </li>
             </outcomeDoers>
         </ingestible>
@@ -49,8 +48,7 @@
         <label>thunderbolt potion</label>
         <description>A highly toxic mixture that temporarily sends the user's muscular and nervous system into overdrive, enhancing melee combat.</description>
         <graphicData>
-            <texPath>Things/Item/Drug/GoJuice/GoJuice_a</texPath>
-            <color>(50, 200, 50)</color>
+            <texPath>Things/Item/Drug/Thunderbolt</texPath>
         </graphicData>
         <ingestible>
             <outcomeDoers>
@@ -59,7 +57,7 @@
                     <severity>1.0</severity>
                 </li>
                 <li Class="WitcherTrials.IngestionOutcomeDoer_ToxicPotion">
-                    <severity>0.50</severity>
+                    <severity>0.75</severity>
                 </li>
             </outcomeDoers>
         </ingestible>
@@ -71,8 +69,7 @@
         <label>tawny owl potion</label>
         <description>A highly toxic mixture that accelerates stamina regeneration, keeping the user awake and productive.</description>
         <graphicData>
-            <texPath>Things/Item/Drug/WakeUp/WakeUp_a</texPath>
-            <color>(150, 50, 200)</color>
+            <texPath>Things/Item/Drug/TawnyOwl</texPath>
         </graphicData>
         <ingestible>
             <outcomeDoers>
@@ -81,7 +78,7 @@
                     <severity>1.0</severity>
                 </li>
                 <li Class="WitcherTrials.IngestionOutcomeDoer_ToxicPotion">
-                    <severity>0.50</severity>
+                    <severity>0.75</severity>
                 </li>
             </outcomeDoers>
         </ingestible>
@@ -93,8 +90,7 @@
         <label>petri's philter</label>
         <description>A highly toxic mixture that drastically increases psychic sensitivity and neural heat recovery.</description>
         <graphicData>
-            <texPath>Things/Item/Drug/Penoxycyline/Penoxycyline_a</texPath>
-            <color>(200, 200, 50)</color>
+            <texPath>Things/Item/Drug/PetrisPhilter</texPath>
         </graphicData>
         <ingestible>
             <outcomeDoers>
@@ -103,7 +99,7 @@
                     <severity>1.0</severity>
                 </li>
                 <li Class="WitcherTrials.IngestionOutcomeDoer_ToxicPotion">
-                    <severity>0.50</severity>
+                    <severity>0.75</severity>
                 </li>
             </outcomeDoers>
         </ingestible>
@@ -115,8 +111,7 @@
         <label>white raffard's decoction</label>
         <description>A highly toxic mixture that forces cellular binding, causing massive immediate healing over a very short duration. Deadly for non-mutants.</description>
         <graphicData>
-            <texPath>Things/Item/Drug/GoJuice/GoJuice_a</texPath>
-            <color>(255, 50, 50)</color>
+            <texPath>Things/Item/Drug/WhiteRaffard</texPath>
         </graphicData>
         <ingestible>
             <outcomeDoers>
@@ -125,7 +120,7 @@
                     <severity>1.0</severity>
                 </li>
                 <li Class="WitcherTrials.IngestionOutcomeDoer_ToxicPotion">
-                    <severity>1.0</severity>
+                    <severity>1.5</severity>
                 </li>
             </outcomeDoers>
         </ingestible>
@@ -137,8 +132,7 @@
         <label>white honey</label>
         <description>A biological cleanser that instantly purges the bloodstream of toxic buildup and completely neutralizes all active witcher potion effects.</description>
         <graphicData>
-            <texPath>Things/Item/Drug/Penoxycyline/Penoxycyline_a</texPath>
-            <color>(255, 255, 255)</color>
+            <texPath>Things/Item/Drug/WhiteHoney</texPath>
         </graphicData>
         <ingestible>
             <outcomeDoers>

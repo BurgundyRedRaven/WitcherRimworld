@@ -3,10 +3,6 @@
     <ThingDef Name="WitcherAmuletBase" ParentName="ApparelBase" Abstract="True">
         <techLevel>Medieval</techLevel>
         <thingClass>Apparel</thingClass>
-        <graphicData>
-            <texPath>Things/Item/Equipment/WeaponMelee/Mace</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-        </graphicData>
         <statBases>
             <Mass>0.2</Mass>
             <WorkToMake>5000</WorkToMake>
@@ -27,6 +23,10 @@
         <defName>Witcher_WolfAmulet_Dormant</defName>
         <label>dormant wolf amulet</label>
         <description>A silver wolf medallion. It requires the Trial of the Mountain to awaken its magical properties.</description>
+        <graphicData>
+            <texPath>Things/Item/Apparel/WolfAmulet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
         <stuffCategories>
             <li>Metallic</li>
         </stuffCategories>
@@ -63,6 +63,10 @@
         <label>active wolf amulet</label>
         <smeltable>false</smeltable>
         <description>A vibrating silver wolf medallion. It heightens the wearer's senses and resonates with psychic energy.</description>
+        <graphicData>
+            <texPath>Things/Item/Apparel/WolfAmulet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
         <equippedStatOffsets>
             <MeleeDodgeChance>10</MeleeDodgeChance>
             <MeleeHitChance>2</MeleeHitChance>
@@ -85,6 +89,10 @@
         <defName>Witcher_CatAmulet_Dormant</defName>
         <label>dormant cat amulet</label>
         <description>A silver cat medallion. It requires the Trial of the Mountain to awaken its magical properties.</description>
+        <graphicData>
+            <texPath>Things/Item/Apparel/CatAmulet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
         <stuffCategories>
             <li>Metallic</li>
         </stuffCategories>
@@ -122,6 +130,10 @@
         <label>active cat amulet</label>
         <smeltable>false</smeltable>
         <description>A vibrating silver cat medallion. It accelerates the wearer's reflexes and resonates with psychic energy.</description>
+        <graphicData>
+            <texPath>Things/Item/Apparel/CatAmulet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
         <equippedStatOffsets>
             <MoveSpeed>0.4</MoveSpeed>
             <MeleeHitChance>4</MeleeHitChance>
@@ -144,6 +156,10 @@
         <defName>Witcher_BearAmulet_Dormant</defName>
         <label>dormant bear amulet</label>
         <description>A silver bear medallion. It requires the Trial of the Mountain to awaken its magical properties.</description>
+        <graphicData>
+            <texPath>Things/Item/Apparel/BearAmulet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
         <stuffCategories>
             <li>Metallic</li>
         </stuffCategories>
@@ -180,6 +196,10 @@
         <label>active bear amulet</label>
         <smeltable>false</smeltable>
         <description>A vibrating silver bear medallion. It hardens the wearer's resolve and resonates with psychic energy.</description>
+        <graphicData>
+            <texPath>Things/Item/Apparel/BearAmulet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
         <equippedStatOffsets>
             <PainShockThreshold>0.15</PainShockThreshold>
             <MentalBreakThreshold>-0.10</MentalBreakThreshold>
