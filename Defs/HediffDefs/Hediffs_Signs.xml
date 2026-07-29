@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!-- Quen -->
+    <HediffDef>
+        <defName>WitcherSign_QuenEffect</defName>
+        <label>Quen</label>
+        <description>A magical shield that absorbs incoming damage until its energy is depleted or the duration expires.</description>
+        <hediffClass>WitcherTrials.Hediff_Quen</hediffClass>
+        <defaultLabelColor>(1, 0.9, 0.2)</defaultLabelColor>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <disappearsAfterTicks>1800</disappearsAfterTicks>
+                <showRemainingTime>true</showRemainingTime>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <!-- Yrden -->
+    <HediffDef>
+        <defName>WitcherSign_YrdenDebuff</defName>
+        <label>Yrden trap</label>
+        <description>Caught in a magical Yrden trap. Movement, dodging, and attack accuracy are severely reduced.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <defaultLabelColor>(0.6, 0, 0.8)</defaultLabelColor>
+        <isBad>true</isBad>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <disappearsAfterTicks>60</disappearsAfterTicks>
+                <showRemainingTime>false</showRemainingTime>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <setMax>0.3</setMax>
+                    </li>
+                </capMods>
+                <statFactors>
+                    <MeleeDodgeChance>0.1</MeleeDodgeChance>
+                    <MeleeHitChance>0.5</MeleeHitChance>
+                </statFactors>
+            </li>
+        </stages>
+    </HediffDef>
+</Defs>

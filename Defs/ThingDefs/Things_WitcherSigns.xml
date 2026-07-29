@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingDef>
+        <defName>WitcherSign_YrdenTrap</defName>
+        <label>Yrden circle</label>
+        <thingClass>WitcherTrials.Thing_YrdenTrap</thingClass>
+        <category>Ethereal</category>
+        <tickerType>Normal</tickerType>
+        <useHitPoints>false</useHitPoints>
+        <selectable>false</selectable>
+        <drawerType>RealtimeOnly</drawerType>
+    </ThingDef>
+</Defs>

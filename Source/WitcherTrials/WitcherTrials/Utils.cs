@@ -18,6 +18,9 @@ namespace WitcherTrials
         public static HediffDef WitcherToxicity => DefDatabase<HediffDef>.GetNamedSilentFail("Witcher_Toxicity");
         public static HediffDef PetrisPhilterEffect => DefDatabase<HediffDef>.GetNamedSilentFail("WitcherPotion_PetrisPhilterEffect");
         public static StatDef FocusRegen => DefDatabase<StatDef>.GetNamedSilentFail("Witcher_FocusRegen");
+        public static HediffDef QuenHediff => DefDatabase<HediffDef>.GetNamedSilentFail("WitcherSign_QuenEffect");
+        public static HediffDef YrdenDebuff => DefDatabase<HediffDef>.GetNamedSilentFail("WitcherSign_YrdenDebuff");
+        public static ThingDef YrdenTrapDef => DefDatabase<ThingDef>.GetNamedSilentFail("WitcherSign_YrdenTrap");
     }
 
     public static class WitcherTrialsUtility

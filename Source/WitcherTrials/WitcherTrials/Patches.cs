@@ -1,5 +1,6 @@
 ﻿using HarmonyLib;
 using RimWorld;
+using UnityEngine;
 using Verse;
 
 namespace WitcherTrials
@@ -98,6 +99,40 @@ namespace WitcherTrials
                 if (Rand.Value < chance)
                 {
                     pawn.story.traits.GainTrait(new Trait(WitcherDefCache.ChildOfDestiny));
+                }
+            }
+        }
+    }
+
+    [HarmonyPatch(typeof(Pawn), nameof(Pawn.PreApplyDamage))]
+    public static class Patch_Pawn_PreApplyDamage
+    {
+        public static bool Prefix(Pawn __instance, ref DamageInfo dinfo, out bool absorbed)
+        {
+            absorbed = false;
+            if (__instance == null || __instance.health?.hediffSet == null) return true;
+
+            Hediff_Quen quen = (Hediff_Quen)__instance.health.hediffSet.GetFirstHediffOfDef(WitcherDefCache.QuenHediff);
+            if (quen != null)
+            {
+                absorbed = quen.AbsorbDamage(dinfo);
+                return !absorbed;
+            }
+            return true;
+        }
+    }
+
+    [HarmonyPatch(typeof(Pawn), "DrawAt")]
+    public static class Patch_Pawn_DrawAt
+    {
+        public static void Postfix(Pawn __instance, Vector3 drawLoc)
+        {
+            if (__instance.health?.hediffSet != null)
+            {
+                Hediff_Quen quen = (Hediff_Quen)__instance.health.hediffSet.GetFirstHediffOfDef(WitcherDefCache.QuenHediff);
+                if (quen != null)
+                {
+                    quen.DrawShieldBubble(drawLoc);
                 }
             }
         }

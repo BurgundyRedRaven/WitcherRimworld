@@ -25,4 +25,112 @@
             </li>
         </comps>
     </AbilityDef>
+
+    <AbilityDef>
+        <defName>WitcherSign_Igni</defName>
+        <label>Igni</label>
+        <description>A burst of flames that ignites enemies in a cone shape. Consumes Focus.</description>
+        <iconPath>UI/Abilities/Igni</iconPath>
+        <cooldownTicksRange>120</cooldownTicksRange>
+        <targetRequired>true</targetRequired>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <range>5.9</range>
+            <warmupTime>0.5</warmupTime>
+            <targetParams>
+                <canTargetPawns>true</canTargetPawns>
+                <canTargetLocations>true</canTargetLocations>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="WitcherTrials.CompProperties_AbilityFocusCost">
+                <focusCost>0.33</focusCost>
+            </li>
+            <li Class="WitcherTrials.CompProperties_AbilityIgni">
+                <range>5.9</range>
+                <angle>60</angle>
+                <damageAmount>15</damageAmount>
+            </li>
+        </comps>
+    </AbilityDef>
+
+    <AbilityDef>
+        <defName>WitcherSign_Quen</defName>
+        <label>Quen</label>
+        <description>A protective shield that absorbs physical and projectile damage. Consumes Focus.</description>
+        <iconPath>UI/Abilities/Quen</iconPath>
+        <cooldownTicksRange>120</cooldownTicksRange>
+        <targetRequired>false</targetRequired>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <warmupTime>0.5</warmupTime>
+            <requireLineOfSight>false</requireLineOfSight>
+            <targetParams>
+                <canTargetSelf>true</canTargetSelf>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="WitcherTrials.CompProperties_AbilityFocusCost">
+                <focusCost>0.33</focusCost>
+            </li>
+            <li Class="WitcherTrials.CompProperties_AbilityQuen">
+                <shieldEnergy>50</shieldEnergy>
+            </li>
+        </comps>
+    </AbilityDef>
+
+    <AbilityDef>
+        <defName>WitcherSign_Axii</defName>
+        <label>Axii</label>
+        <description>A psychic manipulation that forces a target into a violent berserk rage, causing them to attack anyone nearby. Consumes Focus.</description>
+        <iconPath>UI/Abilities/Axii</iconPath>
+        <cooldownTicksRange>180</cooldownTicksRange>
+        <targetRequired>true</targetRequired>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <range>15.9</range>
+            <warmupTime>0.5</warmupTime>
+            <requireLineOfSight>true</requireLineOfSight>
+            <targetParams>
+                <canTargetPawns>true</canTargetPawns>
+                <canTargetSelf>false</canTargetSelf>
+                <canTargetLocations>false</canTargetLocations>
+                <canTargetBuildings>false</canTargetBuildings>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="WitcherTrials.CompProperties_AbilityFocusCost">
+                <focusCost>0.50</focusCost>
+            </li>
+            <li Class="WitcherTrials.CompProperties_AbilityAxii">
+            </li>
+        </comps>
+    </AbilityDef>
+
+    <AbilityDef>
+        <defName>WitcherSign_Yrden</defName>
+        <label>Yrden</label>
+        <description>Places a magical trap on the ground. Hostile targets entering the area are significantly slowed and weakened. Consumes Focus.</description>
+        <iconPath>UI/Abilities/Yrden</iconPath>
+        <cooldownTicksRange>180</cooldownTicksRange>
+        <targetRequired>true</targetRequired>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <range>10</range>
+            <warmupTime>0.5</warmupTime>
+            <targetParams>
+                <canTargetLocations>true</canTargetLocations>
+                <canTargetPawns>true</canTargetPawns>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="WitcherTrials.CompProperties_AbilityFocusCost">
+                <focusCost>0.33</focusCost>
+            </li>
+            <li Class="WitcherTrials.CompProperties_AbilityYrden">
+                <radius>3.9</radius>
+                <duration>1200</duration>
+            </li>
+        </comps>
+    </AbilityDef>
 </Defs>

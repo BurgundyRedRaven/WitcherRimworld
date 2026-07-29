@@ -158,6 +158,10 @@
     <!-- Abilities -->
     <abilities>
       <li>WitcherSign_Aard</li>
+      <li>WitcherSign_Igni</li>
+      <li>WitcherSign_Quen</li>
+      <li>WitcherSign_Axii</li>
+      <li>WitcherSign_Yrden</li>
     </abilities>
     <descriptionHyperlinks>
       <AbilityDef>WitcherSign_Aard</AbilityDef>
