@@ -15,6 +15,9 @@
             <texPath>Things/Pawn/Humanlike/Apparel/PlateArmor/PlateArmor</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
+        <thingCategories>
+            <li>ApparelArmor</li>
+        </thingCategories>
         <apparel>
             <bodyPartGroups>
                 <li>Torso</li>
@@ -28,6 +31,13 @@
                 <li>Middle</li>
                 <li>Shell</li>
             </layers>
+            <tags>
+                <li>MedievalMilitary</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Anything</li>
+                <li>Soldier</li>
+            </defaultOutfitTags>
         </apparel>
         <statBases>
             <Mass>7.0</Mass>
@@ -73,6 +83,9 @@
             <texPath>Things/Pawn/Humanlike/Apparel/SimpleHelmet/SimpleHelmet</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
+        <thingCategories>
+            <li>ApparelArmor</li>
+        </thingCategories>
         <apparel>
             <bodyPartGroups>
                 <li>FullHead</li>
@@ -81,6 +94,13 @@
             <layers>
                 <li>Overhead</li>
             </layers>
+            <tags>
+                <li>MedievalMilitary</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Anything</li>
+                <li>Soldier</li>
+            </defaultOutfitTags>
         </apparel>
         <statBases>
             <Mass>1.5</Mass>
@@ -127,6 +147,9 @@
             <texPath>Things/Pawn/Humanlike/Apparel/Duster/Duster</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
+        <thingCategories>
+            <li>ApparelArmor</li>
+        </thingCategories>
         <apparel>
             <bodyPartGroups>
                 <li>Torso</li>
@@ -138,6 +161,13 @@
                 <li>Middle</li>
                 <li>Shell</li>
             </layers>
+            <tags>
+                <li>MedievalMilitary</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Anything</li>
+                <li>Soldier</li>
+            </defaultOutfitTags>
         </apparel>
         <statBases>
             <Mass>4.0</Mass>
@@ -187,6 +217,9 @@
             <texPath>Things/Pawn/Humanlike/Apparel/Tuque/Tuque</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
+        <thingCategories>
+            <li>ApparelArmor</li>
+        </thingCategories>
         <apparel>
             <bodyPartGroups>
                 <li>UpperHead</li>
@@ -195,6 +228,13 @@
             <layers>
                 <li>Overhead</li>
             </layers>
+            <tags>
+                <li>MedievalMilitary</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Anything</li>
+                <li>Soldier</li>
+            </defaultOutfitTags>
         </apparel>
         <statBases>
             <Mass>0.5</Mass>
@@ -241,6 +281,9 @@
             <texPath>Things/Pawn/Humanlike/Apparel/PlateArmor/PlateArmor</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
+        <thingCategories>
+            <li>ApparelArmor</li>
+        </thingCategories>
         <apparel>
             <bodyPartGroups>
                 <li>Torso</li>
@@ -254,6 +297,13 @@
                 <li>Middle</li>
                 <li>Shell</li>
             </layers>
+            <tags>
+                <li>MedievalMilitary</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Anything</li>
+                <li>Soldier</li>
+            </defaultOutfitTags>
         </apparel>
         <statBases>
             <Mass>12.0</Mass>
@@ -302,6 +352,9 @@
             <texPath>Things/Pawn/Humanlike/Apparel/SimpleHelmet/SimpleHelmet</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
+        <thingCategories>
+            <li>ApparelArmor</li>
+        </thingCategories>
         <apparel>
             <bodyPartGroups>
                 <li>FullHead</li>
@@ -310,6 +363,13 @@
             <layers>
                 <li>Overhead</li>
             </layers>
+            <tags>
+                <li>MedievalMilitary</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Anything</li>
+                <li>Soldier</li>
+            </defaultOutfitTags>
         </apparel>
         <statBases>
             <Mass>2.5</Mass>
