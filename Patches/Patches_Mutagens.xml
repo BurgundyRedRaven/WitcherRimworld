@@ -87,7 +87,7 @@
                         <li Class="PatchOperationAdd">
                             <xpath>Defs/ThingDef[defName="Wolf_Great" or defName="DA_RockTroll" or
                                 defName="DA_BeardedTroll" or defName="DA_Taraal" or
-                                defName="DA_SnowTaraal" or defName="DA_Barog"]</xpath>
+                                defName="DA_SnowTaraal" or defName="DA_Barog" or defName="DA_Crestel"]</xpath>
                             <value>
                                 <butcherProducts>
                                     <Witcher_Mutagen>2</Witcher_Mutagen>

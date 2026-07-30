@@ -137,4 +137,16 @@ namespace WitcherTrials
             }
         }
     }
+
+    [HarmonyPatch(typeof(ThoughtWorker_Dark), "CurrentStateInternal")]
+    public static class Patch_ThoughtWorker_Dark
+    {
+        public static void Postfix(Pawn p, ref ThoughtState __result)
+        {
+            if (__result.Active && p.genes != null && p.genes.HasActiveGene(WitcherDefCache.NightVisionGene))
+            {
+                __result = ThoughtState.Inactive;
+            }
+        }
+    }
 }

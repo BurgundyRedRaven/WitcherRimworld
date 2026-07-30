@@ -21,6 +21,7 @@ namespace WitcherTrials
         public static HediffDef QuenHediff => DefDatabase<HediffDef>.GetNamedSilentFail("WitcherSign_QuenEffect");
         public static HediffDef YrdenDebuff => DefDatabase<HediffDef>.GetNamedSilentFail("WitcherSign_YrdenDebuff");
         public static ThingDef YrdenTrapDef => DefDatabase<ThingDef>.GetNamedSilentFail("WitcherSign_YrdenTrap");
+        public static GeneDef NightVisionGene => DefDatabase<GeneDef>.GetNamedSilentFail("Witcher_NightVision");
     }
 
     public static class WitcherTrialsUtility

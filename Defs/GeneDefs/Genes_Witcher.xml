@@ -188,7 +188,7 @@
   </GeneDef>
 
   <!-- Night Vision -->
-  <GeneDef>
+<GeneDef>
     <defName>Witcher_NightVision</defName>
     <label>night vision</label>
     <description>The eyes adapt instantly to darkness, ignoring all darkness penalties to work speed and combat.</description>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Medieval Overhaul</li>
+        </mods>
+        <match Class="PatchOperationReplace">
+            <xpath>Defs/ResearchProjectDef[defName="Research_TrialOfTheGrasses"]/prerequisites</xpath>
+            <value>
+                <prerequisites>
+                    <li>DankPyon_Alchemy</li>
+                </prerequisites>
+            </value>
+        </match>
+    </Operation>
+</Patch>
