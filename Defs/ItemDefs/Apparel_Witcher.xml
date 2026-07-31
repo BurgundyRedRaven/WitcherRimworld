@@ -43,6 +43,8 @@
             <Mass>7.0</Mass>
             <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
             <ArmorRating_Blunt>0.50</ArmorRating_Blunt>
+            <Insulation_Cold>15</Insulation_Cold>
+            <Insulation_Heat>5</Insulation_Heat>
             <WorkToMake>25000</WorkToMake>
         </statBases>
         <stuffCategories>
@@ -106,6 +108,8 @@
             <Mass>1.5</Mass>
             <ArmorRating_Sharp>0.85</ArmorRating_Sharp>
             <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+            <Insulation_Cold>4</Insulation_Cold>
+            <Insulation_Heat>2</Insulation_Heat>
             <WorkToMake>8000</WorkToMake>
         </statBases>
         <stuffCategories>
@@ -173,6 +177,8 @@
             <Mass>4.0</Mass>
             <ArmorRating_Sharp>0.60</ArmorRating_Sharp>
             <ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+            <Insulation_Cold>10</Insulation_Cold>
+            <Insulation_Heat>8</Insulation_Heat>
             <WorkToMake>20000</WorkToMake>
         </statBases>
         <stuffCategories>
@@ -197,7 +203,7 @@
             <researchPrerequisite>Research_CatSchoolGear</researchPrerequisite>
         </recipeMaker>
         <equippedStatOffsets>
-            <MoveSpeed>0.4</MoveSpeed>
+            <MoveSpeed>0.2</MoveSpeed>
             <MeleeDodgeChance>5</MeleeDodgeChance>
         </equippedStatOffsets>
         <comps>
@@ -240,6 +246,8 @@
             <Mass>0.5</Mass>
             <ArmorRating_Sharp>0.50</ArmorRating_Sharp>
             <ArmorRating_Blunt>0.20</ArmorRating_Blunt>
+            <Insulation_Cold>3</Insulation_Cold>
+            <Insulation_Heat>2</Insulation_Heat>
             <WorkToMake>6000</WorkToMake>
         </statBases>
         <stuffCategories>
@@ -309,6 +317,8 @@
             <Mass>12.0</Mass>
             <ArmorRating_Sharp>1.15</ArmorRating_Sharp>
             <ArmorRating_Blunt>0.70</ArmorRating_Blunt>
+            <Insulation_Cold>20</Insulation_Cold>
+            <Insulation_Heat>4</Insulation_Heat>
             <WorkToMake>35000</WorkToMake>
         </statBases>
         <stuffCategories>
@@ -333,7 +343,7 @@
             <researchPrerequisite>Research_BearSchoolGear</researchPrerequisite>
         </recipeMaker>
         <equippedStatOffsets>
-            <MoveSpeed>-0.4</MoveSpeed>
+            <MoveSpeed>-0.8</MoveSpeed>
         </equippedStatOffsets>
         <comps>
             <li Class="WitcherTrials.CompProperties_WitcherSet">
@@ -375,6 +385,8 @@
             <Mass>2.5</Mass>
             <ArmorRating_Sharp>1.05</ArmorRating_Sharp>
             <ArmorRating_Blunt>0.60</ArmorRating_Blunt>
+            <Insulation_Cold>5</Insulation_Cold>
+            <Insulation_Heat>1</Insulation_Heat>
             <WorkToMake>12000</WorkToMake>
         </statBases>
         <stuffCategories>

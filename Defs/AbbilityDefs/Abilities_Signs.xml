@@ -17,7 +17,7 @@
         </verbProperties>
         <comps>
             <li Class="WitcherTrials.CompProperties_AbilityFocusCost">
-                <focusCost>0.33</focusCost>
+                <focusCost>0.35</focusCost>
             </li>
             <li Class="WitcherTrials.CompProperties_AbilityAard">
                 <stunDurationSeconds>3</stunDurationSeconds>
@@ -71,7 +71,7 @@
         </verbProperties>
         <comps>
             <li Class="WitcherTrials.CompProperties_AbilityFocusCost">
-                <focusCost>0.33</focusCost>
+                <focusCost>0.35</focusCost>
             </li>
             <li Class="WitcherTrials.CompProperties_AbilityQuen">
                 <shieldEnergy>50</shieldEnergy>
@@ -125,7 +125,7 @@
         </verbProperties>
         <comps>
             <li Class="WitcherTrials.CompProperties_AbilityFocusCost">
-                <focusCost>0.33</focusCost>
+                <focusCost>0.35</focusCost>
             </li>
             <li Class="WitcherTrials.CompProperties_AbilityYrden">
                 <radius>3.9</radius>

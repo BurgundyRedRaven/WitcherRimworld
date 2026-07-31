@@ -3,9 +3,11 @@
     <ThingDef Name="WitcherAmuletBase" ParentName="ApparelBase" Abstract="True">
         <techLevel>Medieval</techLevel>
         <thingClass>Apparel</thingClass>
+        <useHitPoints>false</useHitPoints>
         <statBases>
             <Mass>0.2</Mass>
             <WorkToMake>5000</WorkToMake>
+            <DeteriorationRate>0</DeteriorationRate>
         </statBases>
         <apparel>
             <careIfWornByCorpse>false</careIfWornByCorpse>

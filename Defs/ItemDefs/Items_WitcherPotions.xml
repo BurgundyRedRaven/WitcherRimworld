@@ -88,7 +88,7 @@
     <ThingDef ParentName="WitcherPotionBase">
         <defName>WitcherPotion_PetrisPhilter</defName>
         <label>petri's philter</label>
-        <description>A highly toxic mixture that drastically increases psychic sensitivity and neural heat recovery.</description>
+        <description>A highly toxic mixture that drastically increases psychic sensitivity, neural heat recovery and Focus regeneration.</description>
         <graphicData>
             <texPath>Things/Item/Drug/PetrisPhilter</texPath>
         </graphicData>

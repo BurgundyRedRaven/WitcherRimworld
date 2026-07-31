@@ -1,5 +1,6 @@
 ﻿using HarmonyLib;
 using RimWorld;
+using System.Text;
 using UnityEngine;
 using Verse;
 
@@ -33,7 +34,8 @@ namespace WitcherTrials
                 if (extension != null)
                 {
                     bool isHumanlike = targetPawn.RaceProps.Humanlike;
-                    if ((extension.isSilver && !isHumanlike) || (extension.isSteel && isHumanlike))
+                    bool isMechanoid = targetPawn.RaceProps.IsMechanoid;
+                    if ((extension.isSilver && !isHumanlike && !isMechanoid) || (extension.isSteel && isHumanlike))
                     {
                         dinfo.SetAmount(dinfo.Amount * extension.damageMultiplier);
                     }
@@ -146,6 +148,25 @@ namespace WitcherTrials
             if (__result.Active && p.genes != null && p.genes.HasActiveGene(WitcherDefCache.NightVisionGene))
             {
                 __result = ThoughtState.Inactive;
+            }
+        }
+    }
+
+    [HarmonyPatch(typeof(MassUtility), nameof(MassUtility.Capacity))]
+    public static class Patch_MassUtility_Capacity
+    {
+        public static void Postfix(Pawn p, ref float __result, StringBuilder explanation)
+        {
+            if (p != null && p.genes != null && p.genes.HasActiveGene(WitcherDefCache.SuperhumanStrengthGene))
+            {
+                float extraCapacity = 35f;
+                __result += extraCapacity;
+
+                if (explanation != null)
+                {
+                    explanation.AppendLine();
+                    explanation.Append("Witcher mutations: +" + extraCapacity.ToStringMassOffset());
+                }
             }
         }
     }

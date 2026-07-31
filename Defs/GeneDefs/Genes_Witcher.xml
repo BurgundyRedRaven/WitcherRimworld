@@ -92,7 +92,7 @@
       </li>
     </capMods>
     <statOffsets>
-      <HuntingStealth>1</HuntingStealth>
+      <HuntingStealth>0.4</HuntingStealth>
     </statOffsets>
     <selectionWeight>0</selectionWeight>
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
@@ -188,7 +188,7 @@
   </GeneDef>
 
   <!-- Night Vision -->
-<GeneDef>
+  <GeneDef>
     <defName>Witcher_NightVision</defName>
     <label>night vision</label>
     <description>The eyes adapt instantly to darkness, ignoring all darkness penalties to work speed and combat.</description>
@@ -416,7 +416,7 @@
     <iconPath>UI/Icons/Genes/Gene_LethalPredator</iconPath>
     <displayCategory>Miscellaneous</displayCategory>
     <statOffsets>
-      <HuntingStealth>0.80</HuntingStealth>
+      <HuntingStealth>0.60</HuntingStealth>
       <MeleeArmorPenetration>0.50</MeleeArmorPenetration>
     </statOffsets>
     <statFactors>

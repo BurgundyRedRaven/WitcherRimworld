@@ -69,7 +69,7 @@
   <HediffDef>
     <defName>Witcher_TrialOfDreams</defName>
     <label>Trial of Dreams</label>
-    <description>The subject is exposed to powerful mutagens that force a psychic connection to the void. Requires constant monitoring.</description>
+    <description>The subject is exposed to powerful mutagens that force deep psychological trances, hormonal shifts, and bone marrow alterations. Requires constant monitoring.</description>
     <hediffClass>WitcherTrials.Hediff_TrialOfDreams</hediffClass>
     <initialSeverity>0.01</initialSeverity>
     <lethalSeverity>1.0</lethalSeverity>

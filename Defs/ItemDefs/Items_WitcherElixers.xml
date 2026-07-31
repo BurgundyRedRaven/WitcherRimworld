@@ -4,7 +4,7 @@
   <ThingDef ParentName="ResourceBase">
     <defName>Elixir_Grasses</defName>
     <label>decoction of the grasses</label>
-    <description>A highly toxic, mutagenic concoction originally formulated by renegade mages. It systematically breaks down the nervous system to force structural mutations, a harrowing process that historically only three in ten initiates survive.</description>
+    <description>A highly toxic, mutagenic concoction originally formulated by renegade mages. It systematically breaks down the nervous system to force structural mutations, a harrowing process that historically only three in ten initiates survive. The trial is easier to survive for children and those bound by destiny.</description>
     <graphicData>
       <texPath>Things/Item/Drug/Elixir_Grasses</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -72,7 +72,7 @@
     </graphicData>
     <statBases>
       <MaxHitPoints>50</MaxHitPoints>
-      <MarketValue>150</MarketValue>
+      <MarketValue>20</MarketValue>
       <Mass>0.05</Mass>
       <Flammability>1.0</Flammability>
     </statBases>
