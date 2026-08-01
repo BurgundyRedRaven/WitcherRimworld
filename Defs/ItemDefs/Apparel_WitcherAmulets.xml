@@ -8,6 +8,7 @@
             <Mass>0.2</Mass>
             <WorkToMake>5000</WorkToMake>
             <DeteriorationRate>0</DeteriorationRate>
+            <Flammability>0</Flammability>
         </statBases>
         <apparel>
             <careIfWornByCorpse>false</careIfWornByCorpse>
