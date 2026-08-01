@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-  <name>Witcher Trials</name>
+  <name>The Witcher's Path</name>
   <author>RedRaven</author>
-  <packageId>RedRaven.witchertrials</packageId>
+  <packageId>RedRaven.thewitcherspath</packageId>
   <supportedVersions>
     <li>1.6</li>
   </supportedVersions>
-  <description>Introduces the Trial of the Grasses to create Witchers utilizing Biotech gene
-    mechanics.</description>
+  <url>https://github.com/BurgundyRedRaven/WitcherRimworld</url>
+  <description>Introduces Witcher mechanics to Rimworld
+    Features:
+    - Witcher trials with custom biotech genes
+    - Monster mutagens obtained by butchering powerful beasts and monsters
+    - Brew toxic witcher potions for temporary boosts
+    - Steel &amp; Silver weapons that deal additional damage based on target
+    - Armor sets with set bonuses based on the schools of the wolf, cat, and bear
+    - Quests to activate your witcher amulet in a Trial of the Mountain
+    - Patches for Medieval Overhaul and Dark Ages: Beasts and Monsters
+  </description>
   <modDependencies>
     <li>
       <packageId>Ludeon.RimWorld.Biotech</packageId>
