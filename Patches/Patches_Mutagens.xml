@@ -48,8 +48,7 @@
                 <match Class="PatchOperationSequence">
                     <operations>
                         <li Class="PatchOperationAdd">
-                            <xpath>Defs/ThingDef[defName="ColossusToad" or defName="LavaSnail" or
-                                defName="BogHound" or defName="Cat_Scimitar"]</xpath>
+                            <xpath>Defs/ThingDef[defName="ColossusToad" or defName="LavaSnail" or defName="BogHound" or defName="Cat_Scimitar"]</xpath>
                             <value>
                                 <butcherProducts>
                                     <Witcher_Mutagen>1</Witcher_Mutagen>
@@ -68,6 +67,41 @@
                 </match>
             </li>
 
+            <!-- Anomaly DLC -->
+            <li Class="PatchOperationFindMod">
+                <mods>
+                    <li>Anomaly</li>
+                </mods>
+                <match Class="PatchOperationSequence">
+                    <operations>
+                        <li Class="PatchOperationAdd">
+                            <xpath>Defs/ThingDef[defName="Bulbfreak" or defName="Fingerspike" or defName="Ghoul" or defName="Gorehulk" or defName="Metalhorror" or defName="Noctol" or defName="Sightstealer" or defName="Toughspike" or defName="Trispike" or defName="ShamblerGorehulk" or defName="ShamblerSoldier" or defName="ShamblerSwarmer"]</xpath>
+                            <value>
+                                <butcherProducts>
+                                    <Witcher_Mutagen>1</Witcher_Mutagen>
+                                </butcherProducts>
+                            </value>
+                        </li>
+                        <li Class="PatchOperationAdd">
+                            <xpath>Defs/ThingDef[defName="Chimera" or defName="Devourer" or defName="Revenant"]</xpath>
+                            <value>
+                                <butcherProducts>
+                                    <Witcher_Mutagen>2</Witcher_Mutagen>
+                                </butcherProducts>
+                            </value>
+                        </li>
+                        <li Class="PatchOperationAdd">
+                            <xpath>Defs/ThingDef[defName="Dreadmeld" or defName="FleshmassNucleus" or defName="Nociosphere"]</xpath>
+                            <value>
+                                <butcherProducts>
+                                    <Witcher_Mutagen>3</Witcher_Mutagen>
+                                </butcherProducts>
+                            </value>
+                        </li>
+                    </operations>
+                </match>
+            </li>
+
             <!-- Dark Ages : Beasts and Monsters -->
             <li Class="PatchOperationFindMod">
                 <mods>
@@ -76,8 +110,7 @@
                 <match Class="PatchOperationSequence">
                     <operations>
                         <li Class="PatchOperationAdd">
-                            <xpath>Defs/ThingDef[defName="DA_BlackScribe" or
-                                defName="DA_IroncasketBeetle" or defName="DA_Phrak"]</xpath>
+                            <xpath>Defs/ThingDef[defName="DA_BlackScribe" or defName="DA_IroncasketBeetle" or defName="DA_Phrak"]</xpath>
                             <value>
                                 <butcherProducts>
                                     <Witcher_Mutagen>1</Witcher_Mutagen>
@@ -85,9 +118,7 @@
                             </value>
                         </li>
                         <li Class="PatchOperationAdd">
-                            <xpath>Defs/ThingDef[defName="Wolf_Great" or defName="DA_RockTroll" or
-                                defName="DA_BeardedTroll" or defName="DA_Taraal" or
-                                defName="DA_SnowTaraal" or defName="DA_Barog" or defName="DA_Crestel"]</xpath>
+                            <xpath>Defs/ThingDef[defName="Wolf_Great" or defName="DA_RockTroll" or defName="DA_BeardedTroll" or defName="DA_Taraal" or defName="DA_SnowTaraal" or defName="DA_Barog" or defName="DA_Crestel"]</xpath>
                             <value>
                                 <butcherProducts>
                                     <Witcher_Mutagen>2</Witcher_Mutagen>
@@ -95,15 +126,7 @@
                             </value>
                         </li>
                         <li Class="PatchOperationAdd">
-                            <xpath>Defs/ThingDef[defName="DA_LeviathanCrab"]</xpath>
-                            <value>
-                                <butcherProducts>
-                                    <Witcher_Mutagen>3</Witcher_Mutagen>
-                                </butcherProducts>
-                            </value>
-                        </li>
-                        <li Class="PatchOperationAdd">
-                            <xpath>Defs/ThingDef[defName="HiveQueen"]</xpath>
+                            <xpath>Defs/ThingDef[defName="DA_LeviathanCrab" or defName="HiveQueen"]</xpath>
                             <value>
                                 <butcherProducts>
                                     <Witcher_Mutagen>3</Witcher_Mutagen>
@@ -122,36 +145,58 @@
                 <match Class="PatchOperationSequence">
                     <operations>
                         <li Class="PatchOperationAdd">
-                            <xpath>Defs/ThingDef[defName="DankPyon_DireBoar" or
-                                defName="DankPyon_Direwolf" or defName="DankPyon_Ghoul_Stage_One" or
-                                defName="DankPyon_GiantConstrictorCave" or
-                                defName="DankPyon_GiantConstrictorForest" or
-                                defName="DankPyon_LargeCobraCave" or
-                                defName="DankPyon_LargeCobraForest"]</xpath>
+                            <xpath>Defs/ThingDef[defName="DankPyon_DireBoar" or defName="DankPyon_Direwolf" or defName="DankPyon_Ghoul_Stage_One" or defName="DankPyon_GiantConstrictorCave" or defName="DankPyon_GiantConstrictorForest" or defName="DankPyon_LargeCobraCave" or defName="DankPyon_LargeCobraForest"]</xpath>
                             <value>
                                 <butcherProducts>
                                     <Witcher_Mutagen>1</Witcher_Mutagen>
                                 </butcherProducts>
                             </value>
                         </li>
-
                         <li Class="PatchOperationAdd">
-                            <xpath>Defs/ThingDef[defName="DankPyon_Ghoul_Stage_Two" or
-                                defName="DankPyon_Griffon" or defName="DankPyon_Ravelder" or
-                                defName="DankPyon_UnholdPlain" or defName="DankPyon_UnholdSnow" or
-                                defName="DankPyon_UnholdSwamp"]</xpath>
+                            <xpath>Defs/ThingDef[defName="DankPyon_Ghoul_Stage_Two" or defName="DankPyon_Griffon" or defName="DankPyon_Ravelder" or defName="DankPyon_UnholdPlain" or defName="DankPyon_UnholdSnow" or defName="DankPyon_UnholdSwamp"]</xpath>
                             <value>
                                 <butcherProducts>
                                     <Witcher_Mutagen>2</Witcher_Mutagen>
                                 </butcherProducts>
                             </value>
                         </li>
-
                         <li Class="PatchOperationAdd">
-                            <xpath>Defs/ThingDef[defName="DankPyon_AncientTroll" or
-                                defName="DankPyon_Ghoul_Stage_Three" or
-                                defName="DankPyon_LindwurmCave" or
-                                defName="DankPyon_LindwurmForest"]</xpath>
+                            <xpath>Defs/ThingDef[defName="DankPyon_AncientTroll" or defName="DankPyon_Ghoul_Stage_Three" or defName="DankPyon_LindwurmCave" or defName="DankPyon_LindwurmForest"]</xpath>
+                            <value>
+                                <butcherProducts>
+                                    <Witcher_Mutagen>3</Witcher_Mutagen>
+                                </butcherProducts>
+                            </value>
+                        </li>
+                    </operations>
+                </match>
+            </li>
+
+            <!-- Mythic Ages: Megafauna Bestiary -->
+            <li Class="PatchOperationFindMod">
+                <mods>
+                    <li>Mythic Ages: Megafauna Bestiary</li>
+                </mods>
+                <match Class="PatchOperationSequence">
+                    <operations>
+                        <li Class="PatchOperationAdd">
+                            <xpath>Defs/ThingDef[defName="MA_Aminox" or defName="MA_Capryak" or defName="MA_Deermoss" or defName="MA_Direhorse" or defName="MA_Dunbear" or defName="MA_Furpotamus" or defName="MA_Gnaut" or defName="MA_Harpeagle" or defName="MA_Hellboar" or defName="MA_Manehound" or defName="MA_Raptorkhan" or defName="MA_Scarodon" or defName="MA_Simbakub" or defName="MA_Sivatherium" or defName="MA_Sporemole" or defName="MA_Worhin"]</xpath>
+                            <value>
+                                <butcherProducts>
+                                    <Witcher_Mutagen>1</Witcher_Mutagen>
+                                </butcherProducts>
+                            </value>
+                        </li>
+                        <li Class="PatchOperationAdd">
+                            <xpath>Defs/ThingDef[defName="MA_Duskhorn" or defName="MA_Plastemmoth" or defName="MA_SimbakubAlpha"]</xpath>
+                            <value>
+                                <butcherProducts>
+                                    <Witcher_Mutagen>2</Witcher_Mutagen>
+                                </butcherProducts>
+                            </value>
+                        </li>
+                        <li Class="PatchOperationAdd">
+                            <xpath>Defs/ThingDef[defName="MA_PlastemmothAlpha"]</xpath>
                             <value>
                                 <butcherProducts>
                                     <Witcher_Mutagen>3</Witcher_Mutagen>
