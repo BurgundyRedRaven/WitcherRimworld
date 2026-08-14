@@ -15,7 +15,6 @@
     <techLevel>Medieval</techLevel>
     <prerequisites>
       <li>DrugProduction</li>
-      <li>MedicineProduction</li>
     </prerequisites>
     <tab>WitcherTrialsTab</tab>
     <researchViewX>1</researchViewX>
